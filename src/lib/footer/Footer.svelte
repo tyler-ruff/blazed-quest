@@ -39,24 +39,48 @@
                 <div class="mt-6 lg:mt-0 lg:flex-1">
                     <div class="grid grid-cols-2 gap-6 sm:grid-cols-3 md:grid-cols-4">
                         <div>
-                            <h3 class="text-gray-700 uppercase dark:text-white">About</h3>
-                            <a href="#" class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Company</a>
-                            <a href="#" class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">community</a>
-                            <a href="#" class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Careers</a>
+                            <h3 class="text-gray-700 uppercase dark:text-white">
+                                Company
+                            </h3>
+                            <a href="https://blazedlabs.com/" class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">
+                                Home
+                            </a>
+                            <a href="https://blazedlabs.com/about" class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">
+                                About
+                            </a>
+                            <a href="https://blazedlabs.com/blog" class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">
+                                Blog
+                            </a>
                         </div>
 
                         <div>
-                            <h3 class="text-gray-700 uppercase dark:text-white">Blog</h3>
-                            <a href="#" class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Tec</a>
-                            <a href="#" class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Music</a>
-                            <a href="#" class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Videos</a>
+                            <h3 class="text-gray-700 uppercase dark:text-white">
+                                Services
+                            </h3>
+                            <a href="https://blazed.tel/" class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">
+                                Communications
+                            </a>
+                            <a href="https://blazed.xyz/" class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">
+                                Publishing
+                            </a>
+                            <a href="https://blazed.systems/" class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">
+                                Networking
+                            </a>
                         </div>
 
                         <div>
-                            <h3 class="text-gray-700 uppercase dark:text-white">Products</h3>
-                            <a href="#" class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Mega cloud</a>
-                            <a href="#" class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Aperion UI</a>
-                            <a href="#" class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Meraki UI</a>
+                            <h3 class="text-gray-700 uppercase dark:text-white">
+                                Products
+                            </h3>
+                            <a href="https://blazed.watch/" class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">
+                                Blazed Watch
+                            </a>
+                            <a href="https://blazed.world/" class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">
+                                Blazed World
+                            </a>
+                            <a href="https://blazed.space/" class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">
+                                Blazed Space
+                            </a>
                         </div>
 
                         <div>

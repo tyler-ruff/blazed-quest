@@ -18,7 +18,7 @@
             <div class="flex items-center justify-between">
                 <div>
                     <a class="text-2xl font-bold text-gray-800 transition-colors duration-200 transform dark:text-white lg:text-3xl hover:text-gray-700 dark:hover:text-gray-300" href="https://blazed.quest/">
-						<img src="https://blazed.sirv.com/logo/Beaker-Dark.png?=50&h=50" />
+						<img src="https://blazed.sirv.com/logo/Beaker-Dark.png?=50&h=50" alt="Beaker Gray" />
 					</a>
                 </div>
                 
