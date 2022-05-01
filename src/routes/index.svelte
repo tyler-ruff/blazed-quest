@@ -28,7 +28,7 @@
 				First class web development services, using a variety of tools and platforms. No matter who your audience is, and what your budget is, we can craft the front-page that will keep them hooked.
 			</p>
 			<br />
-			<a href="https://blazed.contact/web" class="inline-flex items-center justify-center w-full px-5 py-2 mt-6 text-white bg-blue-600 rounded-lg sm:w-auto hover:bg-blue-500 focus:ring focus:ring-blue-300 focus:ring-opacity-80">
+			<a href="https://blazed.contact/website" class="inline-flex items-center justify-center w-full px-5 py-2 mt-6 text-white bg-blue-600 rounded-lg sm:w-auto hover:bg-blue-500 focus:ring focus:ring-blue-300 focus:ring-opacity-80">
 				Contact Us
 			</a>
 		</div>
@@ -42,7 +42,7 @@
 				Whether it be mobile app development or desktop development, we will assure your customer's experience is top notch. From flow chart to product testing, every stage is covered by our full package.
 			</p>
 			
-			<a href="https://blazed.contact/apps" class="inline-flex items-center justify-center w-full px-5 py-2 mt-6 text-gray-700 transition-colors duration-150 transform bg-white border border-gray-200 rounded-lg dark:bg-gray-900 dark:border-gray-700 hover:bg-gray-100 dark:text-white sm:w-auto dark:hover:bg-gray-800 dark:ring-gray-700 focus:ring focus:ring-gray-200 focus:ring-opacity-80">
+			<a href="https://blazed.contact/app" class="inline-flex items-center justify-center w-full px-5 py-2 mt-6 text-gray-700 transition-colors duration-150 transform bg-white border border-gray-200 rounded-lg dark:bg-gray-900 dark:border-gray-700 hover:bg-gray-100 dark:text-white sm:w-auto dark:hover:bg-gray-800 dark:ring-gray-700 focus:ring focus:ring-gray-200 focus:ring-opacity-80">
 				Contact Us
 			</a>
 		</div>
