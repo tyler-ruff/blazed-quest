@@ -1,5 +1,5 @@
 
-    <footer class="bg-white dark:bg-gray-800">
+    <footer class="bg-white shadow dark:bg-gray-800 py-5">
         <div class="container px-6 py-4 mx-auto">
             <div class="lg:flex">
                 <div class="w-full -mx-6 lg:w-2/5">
