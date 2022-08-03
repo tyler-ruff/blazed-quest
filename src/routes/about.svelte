@@ -1,6 +1,6 @@
 
     <section class="bg-white shadow-md dark:bg-gray-800">
-        <div class="container px-6 py-8 mx-auto">
+        <div class="container px-8 py-8 mx-auto">
             <div class="items-center lg:flex mb-10">
                 <div class="lg:w-1/2">
                     <h2 class="text-3xl font-bold text-gray-800 dark:text-gray-100">
@@ -80,7 +80,9 @@
                             Online - 
                         </span>
                         &nbsp;
-                        <a href="https://blazed.contact/">Contact Us</a>
+                        <a href="https://blazed.contact/">Sales Inquiries</a>
+                        &nbsp;
+                        <a class="text-blue-700" href="https://blazed.company/contact">General Inquiries</a>
                     </li>
                 </ul>
             </div>
