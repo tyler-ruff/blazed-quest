@@ -72,9 +72,13 @@ const siteConfig = {
         url: "https://blazed.quest/portfolio.html",
         submenu: [
             {
+                text: "Projects",
+                url: "https://blazed.quest/portfolio.html?p=projects",
+            },
+            {
                 text: "Websites",
                 url: "https://blazed.quest/portfolio.html?p=websites",
-            },            
+            },
             {
                 text: "Software",
                 url: "https://blazed.quest/portfolio.html?p=software",
