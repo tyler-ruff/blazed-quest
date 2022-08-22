@@ -1,0 +1,33 @@
+/* TEAM */
+
+                            
+Your title: Blazed Labs LLC    
+Site: https://blazedlabs.com/
+
+                            
+Twitter: @BlazedLabs
+Email: hello@blazed.space
+
+Location: Ocean City, New Jersey
+
+					
+/* THANKS */
+
+							
+Name: Tyler Ruff
+Title: Project Management Lead
+Email: tyler.ruff@outlook.com
+Github: tyler-ruff
+
+Name: Matthew Ruff
+Title: Engineer
+Email: pickle@blazed.space
+Github: matt-ruff
+                            
+/* SITE */
+URL:  https://fire-core.netlify.app/
+REPO: https://github.com/blazed-space/fire
+   
+Standards: HTML5, CSS3
+Components: InstantPage
+Software: VSCode

@@ -1,3 +1,1 @@
-[build]
-  command = "npm run build"
-  publish = "build"
+/* /404.html 404
