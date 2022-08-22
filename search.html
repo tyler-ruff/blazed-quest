@@ -11,7 +11,7 @@
     <link href="lib/fire.css" rel="stylesheet" />
     <!-- Site Config -->
     <script src="assets/js/site.blz.js"></script>
-    <script src="assets/js/views/index.blz.js"></script>
+    <script src="assets/js/views/search.blz.js"></script>
     <!-- styles -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
@@ -37,6 +37,11 @@
       let pageData = build_routes(page);
       const app = new Fire(config);
       create_app(app.config, pageData);
+      let params = new Proxy(new URLSearchParams(window.location.search), {
+            get: (searchParams, prop) => searchParams.get(prop),
+        });
+        const query = params.q;
+        document.getElementById('search-term').innerHTML = query;
     </script>
 
     <script src="assets/js/jquery-1.8.2.min.js"></script>
@@ -52,6 +57,7 @@
     <script src="assets/js/hover/setting.js"></script>
     <script src="assets/js/camera/camera.min.js"></script>
     <script src="assets/js/camera/setting.js"></script>
+    <script async src="https://cse.google.com/cse.js?cx=335946da0622f41f3"></script>
 
     <!-- Template Custom JavaScript File -->
     <script src="assets/js/custom.js"></script>
