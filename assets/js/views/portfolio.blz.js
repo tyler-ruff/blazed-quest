@@ -47,7 +47,7 @@ function portfolio(){
                 </div>
                 <div class="span4">
                             <div class="input-append">
-                                <form method="get" target="https://www.blazed.quest/index.html?p=search" class="form-search">
+                                <form method="get" action="https://www.blazed.quest/index.html?p=search" class="form-search">
                                     <input required placeholder="Search Blazed Quest..." type="text" name="q" class="input-medium search-query">
                                     <button type="submit" class="btn btn-inverse">
                                         Search
@@ -211,7 +211,7 @@ function websites(){
               </div>
               <div class="span4">
                 <div class="input-append">
-                    <form method="get" target="https://www.blazed.quest/index.html?p=search" class="form-search">
+                    <form method="get" action="https://www.blazed.quest/index.html?p=search" class="form-search">
                         <input required placeholder="Search Blazed Quest..." type="text" name="q" class="input-medium search-query">
                         <button type="submit" class="btn btn-inverse">
                             Search
@@ -433,7 +433,7 @@ function software(){
                     </div>
                     <div class="span4">
                             <div class="input-append">
-                                <form method="get" target="https://www.blazed.quest/index.html?p=search" class="form-search">
+                                <form method="get" action="https://www.blazed.quest/index.html?p=search" class="form-search">
                                     <input required placeholder="Search Blazed Quest..." type="text" name="q" class="input-medium search-query">
                                     <button type="submit" class="btn btn-inverse">
                                         Search
