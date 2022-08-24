@@ -39,12 +39,17 @@
           get: (searchParams, prop) => searchParams.get(prop),
       });
       const pPage = params.p;
+      const numPage = params.n;
 
       if(pPage === null){
         const portfolioId = params.id;
         if(portfolioId === null){
             window.location.replace("https://blazed.quest/portfolio.html?p=websites");
         }
+      }
+
+      if(numPage === null){
+        numPage = 1;
       }
 
       async function getWebsites(db){
@@ -59,7 +64,9 @@
 
       }
 
-      async function getProjects(db){
+      async function getProjects(db, numPage){
+        const perPage = 8;
+
         const projectsCol = collection(db, 'projects');
         const q = query(projectsCol, limit(8));
         const snapshot = await getDocs(q);
@@ -68,21 +75,23 @@
           for(let i = 0; i < projectsList.length; i++){
             document.getElementById('portfolio-inner').innerHTML += `
               <li class="portfolio-item2" data-id="id-${i}" data-type="web">
-                <div class="span3">
-                  <div class="thumbnail">
-                    <div class="image-wrapp">
-                      <img src="${projectsList[i].image}?w=300&h=300" alt="Portfolio Project" title="${projectsList[i].name}" />
-                      <article class="da-animate da-slideFromRight" style="display: block;">
-                        <a class="link_post" href="${projectsList[i].url}"><span class="fa fa-link"></span></a>
-                        <span><a class="zoom" href="https://blazed.quest/portfolio.html?p=project&id=${projectsList[i].id}"><span class="fa fa-eye"></span></a></span>
-                      </article>
-                    </div>
-                    <div class="caption">
-                      <h4><a href="${projectsList[i].url}">${projectsList[i].name}</a></h4>
-                      <p>${projectsList[i].desc}</p>
+                <a class="link_post" href="https://blazed.quest/portfolio.html?p=project&id=${projectsList[i].id}">
+                  <div class="span3">
+                    <div class="thumbnail">
+                      <div class="image-wrapp">
+                        <img src="${projectsList[i].image}?w=300&h=300" alt="Portfolio Project" title="${projectsList[i].name}" />
+                        <article class="da-animate da-slideFromRight" style="display: block;">
+                          <span class="fa fa-link"></span>
+                          <span><span class="fa fa-eye"></span></a></span>
+                        </article>
+                      </div>
+                      <div class="caption">
+                        <h4>${projectsList[i].name}</h4>
+                        <p>${projectsList[i].desc}</p>
+                      </div>
                     </div>
                   </div>
-                </div>
+                </a>
               </li>
             `;
           }
@@ -91,7 +100,7 @@
 
       switch(pPage){
         case "projects":
-          getProjects(db);
+          getProjects(db, numPage);
           break;
         case "websites":
           getWebsites(db);

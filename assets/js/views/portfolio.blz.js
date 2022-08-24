@@ -475,8 +475,8 @@ function projects(){
             <div class="pagination pagination-right">
               <ul>
                 <li><a href="#">Prev</a></li>
-                <li><a href="#">1</a></li>
-                <li class="active"><a href="#">2</a></li>
+                <li class="active"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
                 <li><a href="#">3</a></li>
                 <li><a href="#">4</a></li>
                 <li><a href="#">Next</a></li>
@@ -485,154 +485,7 @@ function projects(){
           </div>
         </div>
         <div class="row">
-          <ul id="portfolio-inner" class="portfolio-area da-thumbs">
-          <!--
-            <li class="portfolio-item2" data-id="id-0" data-type="web">
-              <div class="span3">
-                <div class="thumbnail">
-                  <div class="image-wrapp">
-                    <img src="assets/img/dummies/work1.jpg" alt="Portfolio name" title="" />
-                    <article class="da-animate da-slideFromRight" style="display: block;">
-                      <a class="link_post" href="portfolio-detail.html"><img src="assets/img/icons/link_post_icon.png" alt="" /></a>
-                      <span><a class="zoom" data-pretty="prettyPhoto" href="assets/img/dummies/big1.jpg"><img src="assets/img/icons/zoom_icon.png" alt="" title="Portfolio name" /></a></span>
-                    </article>
-                  </div>
-  
-                  <div class="caption">
-                    <h4><a href="#">Portfolio name</a></h4>
-                    <p>Tota laboramus adversarium at sed, clita persius qui et, vis quot cibo deterruisset id. An fuisset eleifend eos, agam dicat an ius.</p>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="portfolio-item2" data-id="id-0" data-type="web">
-              <div class="span3">
-                <div class="thumbnail">
-                  <div class="image-wrapp">
-                    <img src="assets/img/dummies/work2.jpg" alt="Portfolio name" title="" />
-                    <article class="da-animate da-slideFromRight" style="display: block;">
-                      <a class="link_post" href="portfolio-detail.html"><img src="assets/img/icons/link_post_icon.png" alt="" /></a>
-                      <span><a class="zoom" data-pretty="prettyPhoto" href="assets/img/dummies/big1.jpg"><img src="assets/img/icons/zoom_icon.png" alt="" title="Portfolio name" /></a></span>
-                    </article>
-                  </div>
-  
-                  <div class="caption">
-                    <h4><a href="#">Portfolio name</a></h4>
-                    <p>Ex decore equidem detracto vis, nihil labores euripidis an sea. Nisl solet nonumes ne has, eos nostrum antiopam aliquando at no.</p>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="portfolio-item2" data-id="id-0" data-type="brand">
-              <div class="span3">
-                <div class="thumbnail">
-                  <div class="image-wrapp">
-                    <img src="assets/img/dummies/work3.jpg" alt="Portfolio name" title="" />
-                    <article class="da-animate da-slideFromRight" style="display: block;">
-                      <a class="link_post" href="portfolio-detail.html"><img src="assets/img/icons/link_post_icon.png" alt="" /></a>
-                      <span><a class="zoom" data-pretty="prettyPhoto" href="assets/img/dummies/big1.jpg"><img src="assets/img/icons/zoom_icon.png" alt="" title="Portfolio name" /></a></span>
-                    </article>
-                  </div>
-  
-                  <div class="caption">
-                    <h4><a href="#">Portfolio name</a></h4>
-                    <p>Ex decore equidem detracto vis, nihil labores euripidis an sea. Nisl solet nonumes ne has, eos nostrum antiopam aliquando at no.</p>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="portfolio-item2" data-id="id-0" data-type="photo">
-              <div class="span3">
-                <div class="thumbnail">
-                  <div class="image-wrapp">
-                    <img src="assets/img/dummies/work4.jpg" alt="Portfolio name" title="" />
-                    <article class="da-animate da-slideFromRight" style="display: block;">
-                      <a class="link_post" href="portfolio-detail.html"><img src="assets/img/icons/link_post_icon.png" alt="" /></a>
-                      <span><a class="zoom" data-pretty="prettyPhoto" href="assets/img/dummies/big1.jpg"><img src="assets/img/icons/zoom_icon.png" alt="" title="Portfolio name" /></a></span>
-                    </article>
-                  </div>
-  
-                  <div class="caption">
-                    <h4><a href="#">Portfolio name</a></h4>
-                    <p>Ex volutpat voluptatum vim. Mea no brute modo saepe vis at, sit te oblique recusabo ullamcorper. Mel aperiri constituto ad mel at.</p>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="portfolio-item2" data-id="id-0" data-type="graphic">
-              <div class="span3">
-                <div class="thumbnail">
-                  <div class="image-wrapp">
-                    <img src="assets/img/dummies/work5.jpg" alt="Portfolio name" title="" />
-                    <article class="da-animate da-slideFromRight" style="display: block;">
-                      <a class="link_post" href="portfolio-detail.html"><img src="assets/img/icons/link_post_icon.png" alt="" /></a>
-                      <span><a class="zoom" data-pretty="prettyPhoto" href="assets/img/dummies/big1.jpg"><img src="assets/img/icons/zoom_icon.png" alt="" title="Portfolio name" /></a></span>
-                    </article>
-                  </div>
-  
-                  <div class="caption">
-                    <h4><a href="#">Portfolio name</a></h4>
-                    <p>Ex decore equidem detracto vis, nihil labores euripidis an sea. Nisl solet nonumes ne has, eos nostrum antiopam aliquando at no.</p>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="portfolio-item2" data-id="id-0" data-type="graphic">
-              <div class="span3">
-                <div class="thumbnail">
-                  <div class="image-wrapp">
-                    <img src="assets/img/dummies/work6.jpg" alt="Portfolio name" title="" />
-                    <article class="da-animate da-slideFromRight" style="display: block;">
-                      <a class="link_post" href="portfolio-detail.html"><img src="assets/img/icons/link_post_icon.png" alt="" /></a>
-                      <span><a class="zoom" data-pretty="prettyPhoto" href="assets/img/dummies/big1.jpg"><img src="assets/img/icons/zoom_icon.png" alt="" title="Portfolio name" /></a></span>
-                    </article>
-                  </div>
-  
-                  <div class="caption">
-                    <h4><a href="#">Portfolio name</a></h4>
-                    <p>Ex volutpat voluptatum vim. Mea no brute modo saepe vis at, sit te oblique recusabo ullamcorper. Mel aperiri constituto ad mel at.</p>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="portfolio-item2" data-id="id-0" data-type="photo">
-              <div class="span3">
-                <div class="thumbnail">
-                  <div class="image-wrapp">
-                    <img src="assets/img/dummies/work7.jpg" alt="Portfolio name" title="" />
-                    <article class="da-animate da-slideFromRight" style="display: block;">
-                      <a class="link_post" href="portfolio-detail.html"><img src="assets/img/icons/link_post_icon.png" alt="" /></a>
-                      <span><a class="zoom" data-pretty="prettyPhoto" href="assets/img/dummies/big1.jpg"><img src="assets/img/icons/zoom_icon.png" alt="" title="Portfolio name" /></a></span>
-                    </article>
-                  </div>
-  
-                  <div class="caption">
-                    <h4><a href="#">Portfolio name</a></h4>
-                    <p>Ex decore equidem detracto vis, nihil labores euripidis an sea. Nisl solet nonumes ne has, eos nostrum antiopam aliquando at no.</p>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="portfolio-item2" data-id="id-0" data-type="ilustrator">
-              <div class="span3">
-                <div class="thumbnail">
-                  <div class="image-wrapp">
-                    <img src="assets/img/dummies/work8.jpg" alt="Portfolio name" title="" />
-                    <article class="da-animate da-slideFromRight" style="display: block;">
-                      <a class="link_post" href="portfolio-detail.html"><img src="assets/img/icons/link_post_icon.png" alt="" /></a>
-                      <span><a class="zoom" data-pretty="prettyPhoto" href="assets/img/dummies/big1.jpg"><img src="assets/img/icons/zoom_icon.png" alt="" title="Portfolio name" /></a></span>
-                    </article>
-                  </div>
-  
-                  <div class="caption">
-                    <h4><a href="#">Portfolio name</a></h4>
-                    <p>Tota laboramus adversarium at sed, clita persius qui et, vis quot cibo deterruisset id. An fuisset eleifend eos, agam dicat an ius.</p>
-                  </div>
-                </div>
-              </div>
-            </li>
-            -->
-          </ul>
+          <ul id="portfolio-inner" class="portfolio-area da-thumbs"></ul>
         </div>
         <div class="row">
           <div class="span12">
