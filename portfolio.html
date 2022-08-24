@@ -21,89 +21,90 @@
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300|Open+Sans:400,300,300italic,400italic" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/color/success.css" rel="stylesheet">
-<script type="module">
-  // Import the functions you need from the SDKs you need
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.3/firebase-app.js";
-  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.9.3/firebase-analytics.js";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.3/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.9.3/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
 
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-  const analytics = getAnalytics(app);
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+      const db = getFirestore(app);
 
-  let params = new Proxy(new URLSearchParams(window.location.search), {
-      get: (searchParams, prop) => searchParams.get(prop),
-  });
-  const pPage = params.p;
+      let params = new Proxy(new URLSearchParams(window.location.search), {
+          get: (searchParams, prop) => searchParams.get(prop),
+      });
+      const pPage = params.p;
 
-  if(pPage === null){
-    const portfolioId = params.id;
-    if(portfolioId === null){
-        window.location.replace("https://blazed.quest/portfolio.html?p=websites");
-    }
-  }
-
-  async function getWebsites(db){
-
-  }
-
-  async function getSoftware(db){
-
-  }
-
-  async function getMedia(db){
-
-  }
-
-  async function getProjects(db){
-    const projectsCol = collection(db, 'projects');
-    const q = query(projectsCol, limit(8));
-    const snapshot = await getDocs(q);
-    const projectsList = snapshot.docs.map(doc => doc.data());
-    if(projectsList.length >= 1){
-      for(let i = 0; i < projectsList.length; i++){
-        document.getElementById('portfolio-inner').innerHTML += `
-          <li class="portfolio-item2" data-id="id-${i}" data-type="web">
-            <div class="span3">
-              <div class="thumbnail">
-                <div class="image-wrapp">
-                  <img src="${projectsList[i].image}?w=300&h=300" alt="Portfolio Project" title="${projectsList[i].name}" />
-                  <article class="da-animate da-slideFromRight" style="display: block;">
-                    <a class="link_post" href="${projectsList[i].url}"><span class="fa fa-link"></span></a>
-                    <span><a class="zoom" href="https://blazed.quest/portfolio.html?p=project&id=${projectsList[i].id}"><span class="fa fa-eye"></span></a></span>
-                  </article>
-                </div>
-                <div class="caption">
-                  <h4><a href="${projectsList[i].url}">${projectsList[i].name}</a></h4>
-                  <p>${projectsList[i].desc}</p>
-                </div>
-              </div>
-            </div>
-          </li>
-        `;
+      if(pPage === null){
+        const portfolioId = params.id;
+        if(portfolioId === null){
+            window.location.replace("https://blazed.quest/portfolio.html?p=websites");
+        }
       }
-    }
-  }
 
-  switch(pPage){
-    case "projects":
-      getProjects(db);
-      break;
-    case "websites":
-      getWebsites(db);
-      break;
-    case "software":
-      getSoftware(db);
-      break;
-    case "images":
-      getMedia(db);
-      break;
-  }
-</script>
+      async function getWebsites(db){
+
+      }
+
+      async function getSoftware(db){
+
+      }
+
+      async function getMedia(db){
+
+      }
+
+      async function getProjects(db){
+        const projectsCol = collection(db, 'projects');
+        const q = query(projectsCol, limit(8));
+        const snapshot = await getDocs(q);
+        const projectsList = snapshot.docs.map(doc => doc.data());
+        if(projectsList.length >= 1){
+          for(let i = 0; i < projectsList.length; i++){
+            document.getElementById('portfolio-inner').innerHTML += `
+              <li class="portfolio-item2" data-id="id-${i}" data-type="web">
+                <div class="span3">
+                  <div class="thumbnail">
+                    <div class="image-wrapp">
+                      <img src="${projectsList[i].image}?w=300&h=300" alt="Portfolio Project" title="${projectsList[i].name}" />
+                      <article class="da-animate da-slideFromRight" style="display: block;">
+                        <a class="link_post" href="${projectsList[i].url}"><span class="fa fa-link"></span></a>
+                        <span><a class="zoom" href="https://blazed.quest/portfolio.html?p=project&id=${projectsList[i].id}"><span class="fa fa-eye"></span></a></span>
+                      </article>
+                    </div>
+                    <div class="caption">
+                      <h4><a href="${projectsList[i].url}">${projectsList[i].name}</a></h4>
+                      <p>${projectsList[i].desc}</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            `;
+          }
+        }
+      }
+
+      switch(pPage){
+        case "projects":
+          getProjects(db);
+          break;
+        case "websites":
+          getWebsites(db);
+          break;
+        case "software":
+          getSoftware(db);
+          break;
+        case "images":
+          getMedia(db);
+          break;
+      }
+  </script>
 
     <!--[if lt IE 9]>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
