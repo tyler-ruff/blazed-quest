@@ -485,7 +485,8 @@ function projects(){
           </div>
         </div>
         <div class="row">
-          <ul class="portfolio-area da-thumbs">
+          <ul id="portfolio-inner" class="portfolio-area da-thumbs">
+          <!--
             <li class="portfolio-item2" data-id="id-0" data-type="web">
               <div class="span3">
                 <div class="thumbnail">
@@ -630,6 +631,7 @@ function projects(){
                 </div>
               </div>
             </li>
+            -->
           </ul>
         </div>
         <div class="row">

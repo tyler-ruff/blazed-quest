@@ -1693,6 +1693,10 @@ img.alignright{
 		margin-right: 20px;
 	}
 
+	.jumbotron{
+		display:hidden;
+	}
+
 }
 
 @media (max-width: 767px) {

@@ -96,7 +96,7 @@ const siteConfig = {
         url: "https://blazed.quest/blog.html",
         submenu: [
             {
-                text: "Development Updates",
+                text: "Project Updates",
                 url: "https://blazed.quest/portfolio.html?p=dev",
             },            
             {
@@ -142,14 +142,16 @@ const siteConfig = {
         url: "https://blazed.systems/"
     },]
 };
-
-function show_burger(event){
-    document.getElementById('header-mobile').classList.remove('hidden');
-}
-
-function hide_burger(event){
-    document.getElementById('header-mobile').classList.add('hidden');
-}
+const firebaseConfig = {
+    apiKey: "AIzaSyDJNpSgZqhn1_ipvk54wsU11UIE1BoYIfc",
+    authDomain: "blz-one-9e383.firebaseapp.com",
+    databaseURL: "https://blz-one-9e383-default-rtdb.firebaseio.com",
+    projectId: "blz-one-9e383",
+    storageBucket: "blz-one-9e383.appspot.com",
+    messagingSenderId: "817319905653",
+    appId: "1:817319905653:web:8ee0f28da3fc5e208bab3c",
+    measurementId: "G-1194VR7QTN"
+  };
 
 function build_menu(config, page){
     const header = f('header');
