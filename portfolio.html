@@ -38,8 +38,8 @@
       let params = new Proxy(new URLSearchParams(window.location.search), {
           get: (searchParams, prop) => searchParams.get(prop),
       });
-      const pPage = params.p;
-      const numPage = params.n;
+      let pPage = params.p;
+      let numPage = params.n;
 
       if(pPage === null){
         const portfolioId = params.id;
