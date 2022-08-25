@@ -88,7 +88,7 @@
 
         const nextItem = f('li');
         const nextLink = f('a');
-        prevLink.innerHTML = "Next";
+        nextLink.innerHTML = "Next";
         if(currentPage <= Math.ceil(totalPages / numPage)){
           nextLink.href = `https://blazed.quest/portfolio.html?p=${page}&n=${currentPage+1}`;
         } else {
