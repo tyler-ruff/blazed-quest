@@ -41,7 +41,7 @@
       let pPage = params.p;
       let numPage = params.n;
 
-      let startAt = "";
+      let startPlace = "";
 
       if(pPage === null){
         const portfolioId = params.id;
@@ -150,8 +150,8 @@
 
       switch(pPage){
         case "projects":
-          startAt = getPagination(db, 'projects', 'projects', numPage, 8);
-          getProjects(db, startAt);
+          startPlace = getPagination(db, 'projects', 'projects', numPage, 8);
+          getProjects(db, startPlace);
           break;
         case "websites":
           getWebsites(db);
