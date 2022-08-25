@@ -460,19 +460,7 @@ function projects(){
       <div class="container">
         <div class="row-fluid">
           <div class="span12">
-            <div class="btn-group filter-category">
-              <a class="btn btn-success" href="#"><i class="icon-list icon-white"></i> Select category</a>
-              <a class="btn btn-success dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
-              <ul class="dropdown-menu filter">
-                <li class="all active"><a href="#"><i class="icon-picture"></i> All category</a></li>
-                <li class="web"><a href="#"><i class="icon-picture"></i> Web design</a></li>
-                <li class="brand"><a href="#"><i class="icon-picture"></i> Brand identity</a></li>
-                <li class="graphic"><a href="#"><i class="icon-picture"></i> Graphic design</a></li>
-                <li class="photo"><a href="#"><i class="icon-picture"></i> Photography</a></li>
-                <li class="ilustrator"><a href="#"><i class="icon-picture"></i> Ilustrator</a></li>
-              </ul>
-            </div>
-            <div class="pagination pagination-right">
+            <div class="pagination">
               <ul id="pagination-top"></ul>
             </div>
           </div>
