@@ -42,13 +42,6 @@
 
       let lastItem = [];
       let maxUnits = 0;
-
-      if(pPage === null){
-        const portfolioId = params.id;
-        if(portfolioId === null){
-            window.location.replace("https://blazed.quest/portfolio.html?p=websites");
-        }
-      }
       
       async function getWebsites(db){
 
@@ -60,6 +53,26 @@
 
       async function getMedia(db){
 
+      }
+
+      async function getProject(db, targetProject){
+        const projectsCol = collection(db, 'projects');
+        q = query(projectsCol, limit(1), where('slug', '==', targetProject));
+        const snapshot = await getDocs(q);
+        const projectsList = snapshot.docs.map(doc => doc.data());
+        for(let i = 0; i < (projectsList.length); i++){
+          document.getElementById('portfolio-title').innerHTML = projectsList[i].name;
+          document.getElementById('portfolio-type').innerHTML = "Project";
+          document.getElementById('portfolio-version').innerHTML = `v${projectsList[i].version}`;
+          document.getElementById('portfolio-website').innerHTML = `<a href="${projectsList[i].url}" target="_blank">Visit Website</a>`;
+          document.getElementById('portfolio-repo').innerHTML = `<a href="${projectsList[i].repo}" target="_blank">Visit Repo</a>`;
+          document.getElementById('portfolio-img-link').href = projectsList[i].url;
+          document.getElementById('portfolio-img').src = projectsList[i].image;
+          document.getElementById('portfolio-desc').innerHTML = projectsList[i].desc;
+          document.getElementById('portfolio-download').href = `${projectsList[i].repo}/releases`;
+          document.getElementById('portfolio-author').innerHTML = projectsList[i].author;
+          document.getElementById('portfolio-license').innerHTML = projectsList[i].license;
+        }
       }
 
       async function getProjects(db, targetPage = null){
@@ -96,17 +109,17 @@
           if(projectsList.length >= 1){
             for(let i = 0; i < (projectsList.length-1); i++){
               document.getElementById('portfolio-inner').innerHTML += `
-                <li class="portfolio-item2" data-href="${projectsList[i].url}" id="portfolio-${i}" data-type="web">
+                <li class="portfolio-item2" id="portfolio-${i}" data-type="web">
                   <div class="span3">
                     <div class="thumbnail">
                       <div class="image-wrapp">
-                        <a href="${projectsList[i].url}">
+                        <a href="https://blazed.quest/portfolio.html?t=project&id=${projectsList[i].slug}">
                           <img src="${projectsList[i].image}?w=300&h=300" alt="Portfolio Project" title="${projectsList[i].name}" />
                         </a>
                       </div>
                       <div class="caption">
-                        <h4><a href="${projectsList[i].url}">${projectsList[i].name}</a></h4>
-                        <p><a href="${projectsList[i].url}">${projectsList[i].desc}</a></p>
+                        <h4><a href="https://blazed.quest/portfolio.html?t=project&id=${projectsList[i].slug}">${projectsList[i].name}</a></h4>
+                        <p><a href="https://blazed.quest/portfolio.html?t=project&id=${projectsList[i].slug}">${projectsList[i].desc}</a></p>
                       </div>
                     </div>
                   </div>
@@ -176,10 +189,24 @@
             case "images":
               getMedia(db);
               break;
+            case "project":
+              getProject(db, targetPage);
+              break;
           }
     }
 
-    render(pPage);
+    
+    if(pPage === null){
+      const portfolioId = params.id;
+      const portfolioType = params.t;
+      if(portfolioId === null || portfolioType === null){
+        window.location.replace("https://blazed.quest/portfolio.html?p=websites");
+      } else {
+        render(portfolioType, portfolioId);
+      }
+    } else {
+      render(pPage);
+    }
   </script>
 
     <!--[if lt IE 9]>
@@ -212,6 +239,7 @@
     <script src="assets/js/portfolio/setting.js"></script>
     <script src="assets/js/hover/jquery-hover-effect.js"></script>
     <script src="assets/js/hover/setting.js"></script>
+    <script defer type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-630727887f0e3d9a"></script>
 
 
     <!-- Template Custom JavaScript File -->

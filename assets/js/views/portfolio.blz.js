@@ -48,8 +48,11 @@ function portfolio(){
             <div class="container">
                 <div class="row">
                 <div class="span8">
-                    <h3><i class="m-icon-big-swapright m-icon-white"></i> [ITEM-TITLE]</h3>
-                    <p>Type: <span id="portfolio-type">[ITEM-TYPE]</span></p>
+                    <h3>
+                      <i class="m-icon-big-swapright m-icon-white"></i> 
+                      <span id="portfolio-title"></span>
+                    </h3>
+                    <p>Type: <span id="portfolio-type"></span></p>
                 </div>
                 <div class="span4">
                             <div class="input-append">
@@ -72,22 +75,17 @@ function portfolio(){
                 <div class="span4">
                 <aside>
                     <div class="widget">
-                    <h4 class="heading-success"><span class="btn btn-large btn-success"><i class="m-icon-big-swapdown m-icon-white"></i></span>&nbsp;&nbsp;Author detail</h4>
-                    <img src="assets/img/avatar.png" class="alignleft" alt="" />
-                    <h5>John doe</h5>
-                    <p>
-                        Donec ullamcorper nulla non metus auctor fringilla commodo luctus
-                    </p><a href="#">Profile detail..</a>
+                      <h4 class="heading-success"><span class="btn btn-large btn-success"><i class="m-icon-big-swapdown m-icon-white"></i></span>&nbsp;&nbsp;Share</h4>
+                      <div class="addthis_inline_share_toolbox"></div>
                     </div>
                     <div class="widget">
                     <h4 class="heading-success"><span class="btn btn-large btn-success"><i class="m-icon-big-swapdown m-icon-white"></i></span>&nbsp;&nbsp;Project detail</h4>
                     <ul class="project-detal">
-                        <li><label>Posted by :</label> John doe</li>
-                        <li><label>Categorie :</label> Web design</li>
-                        <li><label>File type :</label> PSD</li>
-                        <li><label>File size :</label> 350MB</li>
-                        <li><label>License :</label><br /> Similique adipiscing ius et, audire aeterno democritum sed cu, te causae mandamus interpretaris sed. Tamquam hendrerit vim at, ut mea voluptaria theophrastus.
-                        </li>
+                        <li><label>Version:</label> <span id="portfolio-version"></span></li>
+                        <li><label>Website:</label> <span id="portfolio-website"></span></li>
+                        <li><label>Repo:</label> <span id="portfolio-repo"></span></li>
+                        <li><label>Author:</label> <span id="portfolio-author"></span></li>
+                        <li><label>License:</label> <span id="portfolio-license"></span></li>
                     </ul>
                     </div>
                 </aside>
@@ -100,13 +98,10 @@ function portfolio(){
                     </div>
                     <div class="clearfix"></div>
                     <div class="well">
-                    <a href="#"><img src="assets/img/dummies/big.jpg" alt="" /></a>
-                    <h5>Description : </h5>
-                    <p>
-                        Cu cum noster euismod appellantur, mundi vitae vim ut, ea sea scripta expetendis vituperatoribus. Et cibo dicat impetus cum, id his quodsi scripserit. Nec purto habeo recteque eu. Posse oportere accusamus an sit, ex quando phaedrum sapientem ius. Perfecto
-                        ocurreret no nam, eu quas cetero qui, vel ea minim nusquam salutatus. Nemore integre his ei, tollit eirmod eam at.
-                    </p>
-                    <a href="#" class="btn btn-large btn-success">Download here</a>
+                    <a id="portfolio-img-link" href="#"><img src="https://blazed.sirv.com/blazedlabs.com/john-mcmahon-ljjcoULkxL8-unsplash.jpg" id="portfolio-img" alt="" /></a>
+                    <h5>Description: </h5>
+                    <p id="portfolio-desc"></p>
+                    <a id="portfolio-download" class="btn btn-large btn-success">Download here</a>
                     </div>
                 </article>
                 <!-- end article full post -->
