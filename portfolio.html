@@ -49,54 +49,6 @@
         }
       }
       
-      async function getPagination(db, type, page, currentPage, numPage){
-        const totalCol = collection(db, type);
-        const q = query(totalCol);
-        const snapshot = await getDocs(q);
-        const totalList = snapshot.docs.map(doc => doc.data());
-        let totalPages = 0; 
-        if(totalList.length >= 1){
-          totalPages = Math.ceil(totalList.length / numPage);
-        }
-        const prevItem = f('li');
-        const prevLink = f('a');
-        prevLink.innerHTML = "Prev";
-        if(1 >= 1){
-          prevLink.href = `https://blazed.quest/portfolio.html?p=${page}&n=${1-1}`;
-        } else {
-          prevLink.disabled = true;
-        }
-        prevItem.appendChild(prevLink);
-        document.getElementById('pagination-bottom').appendChild(prevItem);
-
-        for(let i = 0; i < totalPages; i++){
-          const pageItem = f('li');
-          const pageLink = f('a');
-          pageLink.href = `https://blazed.quest/portfolio.html?p=${page}&n=${i+1}`;
-          pageLink.innerHTML = `${i+1}`;
-          if(currentPage === (i + 1)){
-            pageLink.classList.add('active');
-          }
-          pageItem.appendChild(pageLink);
-          document.getElementById('pagination-bottom').appendChild(pageItem);
-        }
-
-        const nextItem = f('li');
-        const nextLink = f('a');
-        nextLink.innerHTML = "Next";
-        if(currentPage <= Math.ceil(totalPages / numPage)){
-          nextLink.href = `https://blazed.quest/portfolio.html?p=${page}&n=${1+1}`;
-        } else {
-          nextLink.disabled = true;
-        }
-        nextItem.appendChild(nextLink);
-        document.getElementById('pagination-bottom').appendChild(nextItem);
-        if(numPage === 1){
-          return null;
-        }
-        return totalList[numPage].name;
-      }
-
       async function getWebsites(db){
 
       }
@@ -109,19 +61,19 @@
 
       }
 
-      async function getProjects(db, startPlace){
+      async function getProjects(db, currentPage){
         const projectsCol = collection(db, 'projects');
         let q = null;
         if(startPlace === null){
-          q = query(projectsCol, limit(8));
+          q = query(projectsCol, limit(9));
         } else {
-          q = query(projectsCol, limit(8), startAt(startPlace));
+          q = query(projectsCol, limit(8*currentPage));
         }
         
         const snapshot = await getDocs(q);
         const projectsList = snapshot.docs.map(doc => doc.data());
         if(projectsList.length >= 1){
-          for(let i = 0; i < projectsList.length; i++){
+          for(let i = 0; i < (projectsList.length-1); i++){
             document.getElementById('portfolio-inner').innerHTML += `
               <li class="portfolio-item2" data-id="id-${i}" data-type="web">
                 <div class="span3">
@@ -142,24 +94,41 @@
               </li>
             `;
           }
+          if(projectsList.length === 9){
+            document.getElementById('pagination-bottom').innerHTML = `
+              <li>
+                <a onmouseup="loadMore(${currentPage});">Load More</a>
+              </li>
+            `;
+          }
+          
         }
       }
 
-      switch(pPage){
-        case "projects":
-          startPlace = getPagination(db, 'projects', 'projects', 8);
-          getProjects(db, null);
-          break;
-        case "websites":
-          getWebsites(db);
-          break;
-        case "software":
-          getSoftware(db);
-          break;
-        case "images":
-          getMedia(db);
-          break;
-      }
+
+    function loadMore(currentPage){
+      currentPage += 1;
+      render(pPage, currentPage);
+    }
+    function render(pPage, currentPage){
+          switch(pPage){
+            case "projects":
+              startPlace = getPagination(db, 'projects', 'projects', 8);
+              getProjects(db, null);
+              break;
+            case "websites":
+              getWebsites(db);
+              break;
+            case "software":
+              getSoftware(db);
+              break;
+            case "images":
+              getMedia(db);
+              break;
+          }
+    }
+
+    render(pPage, 1);
   </script>
 
     <!--[if lt IE 9]>
