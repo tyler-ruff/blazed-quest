@@ -111,7 +111,7 @@
 
 
     function loadMore(event){
-      currentPage = parseInt(document.getElementById('page-num').value) + 1;
+      const currentPage = parseInt(document.getElementById('page-num').value) + 1;
       render(pPage, currentPage);
     }
     function render(pPage, currentPage){
