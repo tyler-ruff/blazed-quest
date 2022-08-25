@@ -42,19 +42,6 @@ function build_routes(page){
 }
 
 function portfolio(){
-  /**
-      *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-      *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-    var disqus_config = function () {
-    this.page.url = window.location.href;  // Replace PAGE_URL with your page's canonical URL variable
-    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
-    (function() { // DON'T EDIT BELOW THIS LINE
-    var d = document, s = d.createElement('script');
-    s.src = 'https://blazed-quest.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-    })();
     return `
      <section id="subintro">
         <div class="jumbotron subhead" id="overview">
@@ -63,7 +50,7 @@ function portfolio(){
                 <div class="span8">
                     <h3>
                       <i class="m-icon-big-swapright m-icon-white"></i> 
-                      <span id="portfolio-title"></span>
+                      View Project
                     </h3>
                     <p>Type: <span id="portfolio-type"></span></p>
                 </div>
@@ -88,33 +75,35 @@ function portfolio(){
                 <div class="span4">
                 <aside>
                     <div class="widget">
-                      <h4 class="heading-success"><span class="btn btn-large btn-success"><i class="m-icon-big-swapdown m-icon-white"></i></span>&nbsp;&nbsp;Share</h4>
-                      <div class="addthis_inline_share_toolbox"></div>
+                      <h4 class="heading-success"><span class="btn btn-large btn-success"><i class="m-icon-big-swapdown m-icon-white"></i></span>&nbsp;&nbsp;Project detail</h4>
+                      <ul class="project-detal">
+                          <li><label>Version:</label> <span id="portfolio-version"></span></li>
+                          <li><label>Website:</label> <span id="portfolio-website"></span></li>
+                          <li><label>Repo:</label> <span id="portfolio-repo"></span></li>
+                          <li><label>Author:</label> <span id="portfolio-author"></span></li>
+                          <li><label>License:</label> <span id="portfolio-license"></span></li>
+                      </ul>
                     </div>
                     <div class="widget">
-                    <h4 class="heading-success"><span class="btn btn-large btn-success"><i class="m-icon-big-swapdown m-icon-white"></i></span>&nbsp;&nbsp;Project detail</h4>
-                    <ul class="project-detal">
-                        <li><label>Version:</label> <span id="portfolio-version"></span></li>
-                        <li><label>Website:</label> <span id="portfolio-website"></span></li>
-                        <li><label>Repo:</label> <span id="portfolio-repo"></span></li>
-                        <li><label>Author:</label> <span id="portfolio-author"></span></li>
-                        <li><label>License:</label> <span id="portfolio-license"></span></li>
-                    </ul>
+                      <h4 class="heading-success"><span class="btn btn-large btn-success"><i class="m-icon-big-swapdown m-icon-white"></i></span>&nbsp;&nbsp;Share</h4>
+                      <div class="addthis_inline_share_toolbox"></div>
                     </div>
                 </aside>
                 </div>
                 <div class="span8">
                 <article class="blog-post">
                     <div class="tooltip-demo headline">
-                    <h4>Cu cum noster euismod appellantur</h4>
-                    <span class="comment"><a href="#" data-rel="tooltip" data-placement="top" title="4 Comments">4 comments</a></span>
+                      <h2>
+                        <span id="portfolio-title"></span>
+                      </h2>
+                      <span class="comment"><a id="portfolio-tocomments" data-rel="tooltip" data-placement="top">? comments</a></span>
                     </div>
                     <div class="clearfix"></div>
                     <div class="well">
-                    <a id="portfolio-img-link" href="#"><img src="https://blazed.sirv.com/blazedlabs.com/john-mcmahon-ljjcoULkxL8-unsplash.jpg" id="portfolio-img" alt="" /></a>
-                    <h5>Description: </h5>
-                    <p id="portfolio-desc"></p>
-                    <a id="portfolio-download" class="btn btn-large btn-success">Download here</a>
+                      <a id="portfolio-img-link" href="#"><img src="https://blazed.sirv.com/blazedlabs.com/john-mcmahon-ljjcoULkxL8-unsplash.jpg" id="portfolio-img" alt="" /></a>
+                      <h5>Description: </h5>
+                      <p id="portfolio-desc"></p>
+                      <a id="portfolio-download" class="btn btn-large btn-success">Download here</a>
                     </div>
                 </article>
                 <!-- end article full post -->

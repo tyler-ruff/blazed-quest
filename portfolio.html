@@ -72,7 +72,10 @@
           document.getElementById('portfolio-download').href = `${projectsList[i].repo}/releases`;
           document.getElementById('portfolio-author').innerHTML = projectsList[i].author;
           document.getElementById('portfolio-license').innerHTML = projectsList[i].license;
+          document.getElementById('portfolio-tocomments').href = `https://blazed.quest/portfolio.html?t=project&id=${projectsList[i].slug}#disqus_thread`;
+          
         }
+        
       }
 
       async function getProjects(db, targetPage = null){
@@ -214,6 +217,11 @@
         (d.head || d.body).appendChild(s);
         })();
         render(portfolioType, portfolioId);
+        const commentCountScript = f('script');
+        commentCountScript.src = "//blazed-quest.disqus.com/count.js";
+        commentCountScript.id = "dsq-count-scr";
+        commentCountScript.async = true;
+        document.body.appendChild(commentCountScript);
       }
     } else {
       render(pPage);
