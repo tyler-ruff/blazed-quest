@@ -70,7 +70,6 @@
           prevLink.disabled = true;
         }
         prevItem.appendChild(prevLink);
-        document.getElementById('pagination-top').appendChild(prevItem);
         document.getElementById('pagination-bottom').appendChild(prevItem);
 
         for(let i = 0; i < totalPages; i++){
@@ -82,7 +81,6 @@
             pageLink.classList.add('active');
           }
           pageItem.appendChild(pageLink);
-          document.getElementById('pagination-top').appendChild(pageItem);
           document.getElementById('pagination-bottom').appendChild(pageItem);
         }
 
@@ -95,7 +93,6 @@
           nextLink.disabled = true;
         }
         nextItem.appendChild(nextLink);
-        document.getElementById('pagination-top').appendChild(nextItem);
         document.getElementById('pagination-bottom').appendChild(nextItem);
       }
 

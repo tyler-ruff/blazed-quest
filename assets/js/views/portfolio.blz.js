@@ -458,13 +458,6 @@ function projects(){
   
     <section id="maincontent">
       <div class="container">
-        <div class="row-fluid">
-          <div class="span12">
-            <div class="pagination">
-              <ul id="pagination-top"></ul>
-            </div>
-          </div>
-        </div>
         <div class="row">
           <ul id="portfolio-inner" class="portfolio-area da-thumbs"></ul>
         </div>
