@@ -1,14 +1,29 @@
-/* TEAM */
-
+            Another Dream made into Reality, by:
+    ____  __                     __   __          __        
+   / __ )/ /___ _____  ___  ____/ /  / /   ____ _/ /_  _____
+  / __  / / __ `/_  / / _ \/ __  /  / /   / __ `/ __ \/ ___/
+ / /_/ / / /_/ / / /_/  __/ /_/ /  / /___/ /_/ / /_/ (__  ) 
+/_____/_/\__,_/ /___/\___/\__,_/  /_____/\__,_/_.___/____/  
                             
-Your title: Blazed Labs LLC    
+Company: Blazed Labs LLC
 Site: https://blazedlabs.com/
 
-                            
+Publisher: Blazed Publishing
+Site: https://blazed.xyz/
+
 Twitter: @BlazedLabs
 Email: hello@blazed.space
-
 Location: Ocean City, New Jersey
+Telephone: +1(855) 788-2348
+
+(c)2022 Blazed Labs LLC, Ruff Management Inc. 
+All Rights Reserved. 
+
+ _____ _               _    __        _       
+| __  | |___ ___ ___ _| |  |  |   ___| |_ ___ 
+| __ -| | .'|- _| -_| . |  |  |__| .'| . |_ -|
+|_____|_|__,|___|___|___|  |_____|__,|___|___|
+                                              
 
 					
 /* THANKS */
@@ -25,9 +40,49 @@ Email: pickle@blazed.space
 Github: matt-ruff
                             
 /* SITE */
-URL:  https://fire-core.netlify.app/
-REPO: https://github.com/blazed-space/fire
-   
-Standards: HTML5, CSS3
-Components: InstantPage
-Software: VSCode
+
+SITE TITLE: Blazed Quest
+URL:  https://blazed.quest/
+REPO: https://github.com/tyler-ruff/blazed-quest
+
+Framework: Fire for HTML5
+Libraries: jQuery, jQuery-elastislide, jQuery-flexslider, jQuery-prettyPhoto,
+Bootstrap, Prettify, Modernizr, Firebase
+Template:  Scaffold [https://www.free-css.com/free-css-templates/page246/scaffold]
+           Scaffold [https://bootstrapmade.com/scaffold-bootstrap-metro-style-template/]
+
+
+                                 (                     
+   (   (                  (      )\ )           )      
+ ( )\  )\    )        (   )\ )  (()/(     )  ( /(      
+ )((_)((_)( /(  (    ))\ (()/(   /(_)) ( /(  )\()) (   
+((_)_  _  )(_)) )\  /((_) ((_)) (_))   )(_))((_)\  )\  
+ | _ )| |((_)_ ((_)(_))   _| |  | |   ((_)_ | |(_)((_) 
+ | _ \| |/ _` ||_ // -_)/ _` |  | |__ / _` || '_ \(_-< 
+ |___/|_|\__,_|/__|\___|\__,_|  |____|\__,_||_.__//__/
+
+
+/* WARRANTY */
+
+The Software will operate in conformity with the then current standard Documentation 
+(except for minor defects or errors not material to the core functionality of the 
+Software under normal use and circumstances) for a period of one-hundred and twenty 
+(120) days from the date of initial delivery of the Software ("Warranty Period"). 
+If the Software does not perform in accordance with the foregoing warranty during
+the Warranty Period, You must tell Us so in writing and during the Warranty Period 
+and assuming We can verify such nonconformity, We will use reasonable efforts to 
+correct any deficiencies in the Software so that it will perform in accordance 
+with such warranty. Your sole and exclusive remedy, and Our sole obligation in 
+the event of nonconformity of the Software with the foregoing warranty will be 
+the correction of the condition making it nonconforming. If We are not able 
+correct the alleged breach of warranty, then We will refund applicable fees 
+paid for a perpetual licence to the Software and will refund applicable fees 
+paid for the remainder of the Term for subscription licensed Software. Your 
+obligation is to provide all information reasonably requested to enable Us 
+to cure the nonconformity. The above warranty specifically excludes defects 
+resulting from accident, abuse, unauthorized repair, modifications, 
+misapplication, or use of the Software that is otherwise materially 
+inconsistent with the Documentation.
+
+(c)2022 Blazed Labs LLC, Ruff Management Inc. 
+All Rights Reserved. 
