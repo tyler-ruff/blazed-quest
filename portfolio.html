@@ -61,13 +61,16 @@
 
       }
 
-      async function getProjects(db, currentPage){
+      async function getProjects(db){
+        currentPage = parseInt(document.getElementById('page-num').value);
         const projectsCol = collection(db, 'projects');
         let q = null;
         if(currentPage === 1){
           q = query(projectsCol, limit(9));
+          document.getElementById('page-num').value = "1";
         } else {
           q = query(projectsCol, limit(8*currentPage));
+          document.getElementById('page-num').value = `${currentPage}`;
         }
         
         const snapshot = await getDocs(q);
@@ -97,23 +100,24 @@
           if(projectsList.length === 9){
             document.getElementById('pagination-bottom').innerHTML = `
               <li>
-                <a onmouseup="loadMore(${currentPage});">Load More</a>
+                <a id="load-more">Load More</a>
               </li>
             `;
+            document.getElementById('load-more').addEventListener('mouseup', loadMore)
           }
           
         }
       }
 
 
-    function loadMore(currentPage){
-      currentPage += 1;
+    function loadMore(event){
+      currentPage = parseInt(document.getElementById('page-num').value) + 1;
       render(pPage, currentPage);
     }
     function render(pPage, currentPage){
           switch(pPage){
             case "projects":
-              getProjects(db, currentPage);
+              getProjects(db);
               break;
             case "websites":
               getWebsites(db);
@@ -127,7 +131,7 @@
           }
     }
 
-    render(pPage, 1);
+    render(pPage);
   </script>
 
     <!--[if lt IE 9]>

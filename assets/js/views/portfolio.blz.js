@@ -465,6 +465,7 @@ function projects(){
           <div class="span12">
             <div class="pagination">
               <ul id="pagination-bottom"></ul>
+              <input type="hidden" id="page-num" value="1" />
             </div>
           </div>
         </div>
