@@ -463,7 +463,7 @@ function projects(){
         </div>
         <div class="row">
           <div class="span12">
-            <div id="pagination-container" class="pagination">
+            <div id="pagination-wrapper" class="pagination">
               <ul id="pagination-bottom"></ul>
             </div>
           </div>
