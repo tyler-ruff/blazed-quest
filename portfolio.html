@@ -62,7 +62,7 @@
       }
 
       async function getProjects(db){
-        currentPage = parseInt(document.getElementById('page-num').value);
+        const currentPage = parseInt(document.getElementById('page-num').value);
         const projectsCol = collection(db, 'projects');
         let q = null;
         if(currentPage === 1){
