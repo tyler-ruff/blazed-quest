@@ -24,7 +24,7 @@
     <script type="module">
       // Import the functions you need from the SDKs you need
       import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.3/firebase-app.js";
-      import { getFirestore, collection, getDocs, query, startAt, limit, orderBy, where } from "https://www.gstatic.com/firebasejs/9.9.3/firebase-firestore.js";
+      import { getFirestore, collection, getDocs, query, startAfter, limit, orderBy, where } from "https://www.gstatic.com/firebasejs/9.9.3/firebase-firestore.js";
       // TODO: Add SDKs for Firebase products that you want to use
       // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -40,7 +40,8 @@
       });
       let pPage = params.p;
 
-      let startPlace = "";
+      let lastItem = [];
+      let maxUnits = 0;
 
       if(pPage === null){
         const portfolioId = params.id;
@@ -61,22 +62,37 @@
 
       }
 
-      async function getProjects(db){
+      async function getProjects(db, targetPage = null){
         const projectsCol = collection(db, 'projects');
+
+        //Get Total Count
+        const qry = query(projectsCol);
+        const snapshot = await getDocs(qry);
+        const count = snapshot.size;
 
         let currentPage = 1;
         let q = null;
+        let lastItem = [];
         const pageNum = document.getElementById('page-num');
-        if(pageNum){
-          currentPage = parseInt(pageNum.innerHTML);
-          q = query(projectsCol, limit(8*currentPage));
+        if(targetPage !== null){
+          currentPage = parseInt(document.getElementById('page-num').innerHTML);
+          lastItem[targetPage] = document.getElementById('last-item').innerHTML;
+          q = query(projectsCol, limit(9), orderBy('name', 'asc'), startAfter(lastItem[targetPage]));
         } else {
-          q = query(projectsCol, limit(8));
+          q = query(projectsCol, orderBy('name', 'asc'), limit(9));
+        }
+
+        if((currentPage >= Math.ceil(count / 8))){
+          document.getElementById('portfolio-info').innerHTML = `Viewing: ${Math.floor(count / 8) + 8} of ${count} Projects.`;
+        }
+        else {
+          document.getElementById('portfolio-info').innerHTML = `Viewing: ${currentPage*8} of ${count} Projects.`;
         }
 
         if(q !== null){
           const snapshot = await getDocs(q);
           const projectsList = snapshot.docs.map(doc => doc.data());
+          document.getElementById('portfolio-inner').innerHTML = ``;
           if(projectsList.length >= 1){
             for(let i = 0; i < (projectsList.length-1); i++){
               document.getElementById('portfolio-inner').innerHTML += `
@@ -98,32 +114,61 @@
                   </div>
                 </li>
               `;
+              if(i === (projectsList.length-2)){
+                const lastItem = projectsList[projectsList.length-2].name;
+                const lastItemVar = f('span');
+                lastItemVar.id = "last-item";
+                lastItemVar.classList.add("hidden-var");
+                lastItemVar.innerHTML = `${lastItem}`;
+                document.getElementById('pagination-wrapper').appendChild(lastItemVar);
+              }
             }
             const pageVar = f('span');
             pageVar.id = "page-num";
             pageVar.classList.add("hidden-var");
             pageVar.innerHTML = `${currentPage}`;
-            pageVar.type = "hidden"
             document.getElementById('pagination-wrapper').appendChild(pageVar);
-            document.getElementById('pagination-bottom').innerHTML = `
-              <li>
-                <a id="next-page">Next Page</a>
-              </li>
-            `;
-            document.getElementById('next-page').addEventListener('mouseup', nextPage);
+            document.getElementById('pagination-bottom').innerHTML = ``;
+            if(currentPage > 1){
+              document.getElementById('pagination-bottom').innerHTML += `
+                <li>
+                  <a class="pagination-btn" id="prev-page">Previous</a>
+                </li>
+              `;
+              document.getElementById('prev-page').addEventListener('mouseup', prevPage);
+            }
+            if(currentPage < Math.ceil(count/8)){
+              document.getElementById('pagination-bottom').innerHTML += `
+                <li>
+                  <a class="pagination-btn" id="next-page">Next</a>
+                </li>
+              `;
+              document.getElementById('next-page').addEventListener('mouseup', nextPage);
+            }
+            
           }
         }
       }
 
 
     function nextPage(event){
-      const currentPage = parseInt(document.getElementById('page-num').innerHTML) + 1;
-      render(pPage, currentPage);
+      const newPage = parseInt(document.getElementById('page-num').innerHTML) + 1;
+      document.getElementById('page-num').innerHTML = `${newPage}`;
+      render(pPage, newPage);
     }
-    function render(pPage, currentPage){
+    function prevPage(event){
+      const newPage = parseInt(document.getElementById('page-num').innerHTML) - 1;
+      document.getElementById('page-num').innerHTML = `${newPage}`;
+      if(newPage === 1){
+        render(pPage);
+      } else {
+        render(pPage, newPage);
+      }
+    }
+    function render(pPage, targetPage = null){
           switch(pPage){
             case "projects":
-              getProjects(db);
+              getProjects(db, targetPage);
               break;
             case "websites":
               getWebsites(db);

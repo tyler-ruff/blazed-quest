@@ -657,6 +657,10 @@ ul.filter li.active a{
 	color:#737373;
 }
 
+.pagination-btn{
+	cursor: pointer;
+}
+
 .absolute-comment{
 	background:#f8f8f8;
 	position:absolute;
