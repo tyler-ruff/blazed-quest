@@ -57,6 +57,7 @@
         const q = query(totalCol);
         const snapshot = await getDocs(q);
         const totalList = snapshot.docs.map(doc => doc.data());
+        let totalPages = 0; 
         if(totalList.length >= 1){
           totalPages = Math.ceil(numPage / totalList.length);
         }
