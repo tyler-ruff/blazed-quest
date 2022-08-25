@@ -24,7 +24,7 @@
     <script type="module">
       // Import the functions you need from the SDKs you need
       import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.3/firebase-app.js";
-      import { getFirestore, collection, getDocs, query, limit, orderBy, where } from "https://www.gstatic.com/firebasejs/9.9.3/firebase-firestore.js";
+      import { getFirestore, collection, getDocs, query, startAt, limit, orderBy, where } from "https://www.gstatic.com/firebasejs/9.9.3/firebase-firestore.js";
       // TODO: Add SDKs for Firebase products that you want to use
       // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -40,6 +40,8 @@
       });
       let pPage = params.p;
       let numPage = params.n;
+
+      let startAt = "";
 
       if(pPage === null){
         const portfolioId = params.id;
@@ -94,6 +96,10 @@
         }
         nextItem.appendChild(nextLink);
         document.getElementById('pagination-bottom').appendChild(nextItem);
+        if(numPage === 1){
+          return null;
+        }
+        return totalList[numPage-1].name;
       }
 
       async function getWebsites(db){
@@ -108,9 +114,13 @@
 
       }
 
-      async function getProjects(db){
+      async function getProjects(db, startAt){
         const projectsCol = collection(db, 'projects');
-        const q = query(projectsCol, limit(8));
+        if(startAt === null){
+          const q = query(projectsCol, limit(8));
+        } else {
+          const q = query(projectsCol, limit(8), startAt(startAt));
+        }
         const snapshot = await getDocs(q);
         const projectsList = snapshot.docs.map(doc => doc.data());
         if(projectsList.length >= 1){
@@ -140,8 +150,8 @@
 
       switch(pPage){
         case "projects":
-          getProjects(db);
-          getPagination(db, 'projects', 'projects', numPage, 8);
+          startAt = getPagination(db, 'projects', 'projects', numPage, 8);
+          getProjects(db, startAt);
           break;
         case "websites":
           getWebsites(db);
