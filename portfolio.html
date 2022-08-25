@@ -39,7 +39,6 @@
           get: (searchParams, prop) => searchParams.get(prop),
       });
       let pPage = params.p;
-      let numPage = params.n;
 
       let startPlace = "";
 
@@ -49,11 +48,7 @@
             window.location.replace("https://blazed.quest/portfolio.html?p=websites");
         }
       }
-
-      if(numPage === null){
-        numPage = 1;
-      }
-
+      
       async function getPagination(db, type, page, currentPage, numPage){
         const totalCol = collection(db, type);
         const q = query(totalCol);
@@ -99,7 +94,7 @@
         if(numPage === 1){
           return null;
         }
-        return totalList[numPage-1].name;
+        return totalList[numPage].name;
       }
 
       async function getWebsites(db){
@@ -116,8 +111,13 @@
 
       async function getProjects(db, startPlace){
         const projectsCol = collection(db, 'projects');
-        //const q = query(projectsCol, limit(8), startAt(startPlace));
-        const q = query(projectsCol, limit(8));
+        let q = null;
+        if(startPlace === null){
+          q = query(projectsCol, limit(8));
+        } else {
+          q = query(projectsCol, limit(8), startAt(startPlace));
+        }
+        
         const snapshot = await getDocs(q);
         const projectsList = snapshot.docs.map(doc => doc.data());
         if(projectsList.length >= 1){
@@ -147,8 +147,8 @@
 
       switch(pPage){
         case "projects":
-          startPlace = getPagination(db, 'projects', 'projects', numPage, 8);
-          getProjects(db, startPlace);
+          startPlace = getPagination(db, 'projects', 'projects', 8);
+          getProjects(db, null);
           break;
         case "websites":
           getWebsites(db);
