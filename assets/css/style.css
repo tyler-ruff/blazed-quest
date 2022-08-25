@@ -550,6 +550,11 @@ section#subintro {
 
 
 /* portfolio */
+.portfolio-title{
+	margin-bottom:10px;
+	padding-left:10px;
+}
+
 .filter-category{
 	margin-bottom:10px;
 	float:left;

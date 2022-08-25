@@ -459,7 +459,7 @@ function projects(){
     <section id="maincontent">
       <div class="container">
         <div class="row">
-          <h2 id="portfolio-info"></h2>
+          <h2 class="portfolio-title" id="portfolio-info"></h2>
           <ul id="portfolio-inner" class="portfolio-area da-thumbs"></ul>
         </div>
         <div class="row">
