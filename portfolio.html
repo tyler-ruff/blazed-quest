@@ -97,21 +97,27 @@
               </li>
             `;
           }
+          const pageVar = f('span');
+          pageVar.id = "page-num";
+          pageVar.classList.add("hidden-var");
+          pageVar.innerHTML = `${currentPage}`;
+          pageVar.type = "hidden"
+          document.getElementById('pagination-wrapper').appendChild(pageVar);
           if(projectsList.length === 9){
             document.getElementById('pagination-bottom').innerHTML = `
               <li>
-                <a id="load-more">Load More</a>
+                <a id="next-page">Next Page</a>
               </li>
             `;
-            document.getElementById('load-more').addEventListener('mouseup', loadMore)
+            document.getElementById('next-page').addEventListener('mouseup', nextPage);
           }
           
         }
       }
 
 
-    function loadMore(event){
-      const currentPage = parseInt(document.getElementById('page-num').value) + 1;
+    function nextPage(event){
+      const currentPage = parseInt(document.getElementById('page-num').innerHTML) + 1;
       render(pPage, currentPage);
     }
     function render(pPage, currentPage){

@@ -93,19 +93,19 @@ const siteConfig = {
         text: "Blog",
         theme: "info",
         icon: "bullhorn",
-        url: "https://blazed.quest/blog.html",
+        url: "https://blazed.dev/news.html",
         submenu: [
             {
                 text: "Project Updates",
-                url: "https://blazed.quest/portfolio.html?p=dev",
+                url: "https://blazed.dev/news.html",
             },            
             {
-                text: "Announcements",
-                url: "https://blazed.quest/portfolio.html?p=announcements",
+                text: "Learn",
+                url: "https://blazed.dev/learn.html",
             },
             {
-                text: "Reports",
-                url: "https://blazed.quest/portfolio.html?p=reports",
+                text: "Blazed Publishing",
+                url: "https://blazed.xyz/",
             }
         ]
     }, 

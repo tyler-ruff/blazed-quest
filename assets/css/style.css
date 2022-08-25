@@ -25,6 +25,10 @@ iframe, embed, object {
 	border:none;
 }
 
+.hidden-var{
+	display:none;
+}
+
 /* custom template style */
 
 .well:hover {
