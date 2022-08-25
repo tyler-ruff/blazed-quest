@@ -180,8 +180,8 @@ function build_menu(config, page){
         const listElement = f('li');
         const dropdownList = f('ul');
         if("submenu" in config.menu[i]){
-            listElement.classList.add('dropdown', 'box-tile');
-            dropdownList.classList.add('dropdown-menu', 'content');
+            listElement.classList.add('dropdown');
+            dropdownList.classList.add('dropdown-menu');
             for(let k = 0; k < config.menu[i].submenu.length; k++){
                 const dropdownElement = f('li');
                 const dropdownLink = f('a');
