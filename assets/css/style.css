@@ -679,6 +679,10 @@ ul.filter li.active a{
 	text-decoration: none;
 }
 
+.addthis_inline_share_toolbox{
+	text-align: center;
+}
+
 .pagination-btn{
 	cursor: pointer;
 }
