@@ -96,7 +96,7 @@
           if(projectsList.length >= 1){
             for(let i = 0; i < (projectsList.length-1); i++){
               document.getElementById('portfolio-inner').innerHTML += `
-                <li class="portfolio-item2" data-id="id-${i}" data-type="web">
+                <li class="portfolio-item2" data-href="${projectsList[i].url}" id="portfolio-${i}" data-type="web">
                   <div class="span3">
                     <div class="thumbnail">
                       <div class="image-wrapp">
@@ -112,6 +112,8 @@
                   </div>
                 </li>
               `;
+              document.getElementById('portfolio-'+i).addEventListener('mouseup', goto);
+              
               if(i === (projectsList.length-2)){
                 const lastItem = projectsList[projectsList.length-2].name;
                 const lastItemVar = f('span');
@@ -148,7 +150,9 @@
         }
       }
 
-
+    function goto(event){
+      window.location.href = event.currentTarget.dataset.href;
+    }
     function nextPage(event){
       const newPage = parseInt(document.getElementById('page-num').innerHTML) + 1;
       document.getElementById('page-num').innerHTML = `${newPage}`;
