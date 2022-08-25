@@ -8,32 +8,32 @@ function build_routes(page){
     switch(page){
         case 'projects':
           data = {
-              pageNum: 16,
+              pageNum: 4,
               content: projects()
           };
           break;
         case 'images':
             data = {
-                pageNum: 15,
+                pageNum: 4,
                 content: images()
             };
             break;
         case 'software':
             data = {
-                pageNum: 14,
+                pageNum: 4,
                 content: software()
             };
             break;
         case 'websites':
                 data = {
-                    pageNum: 13,
+                    pageNum: 4,
                     content: websites()
                 };
                 break;
         case 'home':
         default:
             data = {
-                pageNum: 12,
+                pageNum: 4,
                 content: portfolio()
             };
             break;
@@ -100,7 +100,7 @@ function portfolio(){
                     </div>
                     <div class="clearfix"></div>
                     <div class="well">
-                      <a id="portfolio-img-link" href="#"><img src="https://blazed.sirv.com/blazedlabs.com/john-mcmahon-ljjcoULkxL8-unsplash.jpg" id="portfolio-img" alt="" /></a>
+                      <a id="portfolio-img-link"><img src="https://blazed.sirv.com/blazedlabs.com/john-mcmahon-ljjcoULkxL8-unsplash.jpg" id="portfolio-img" alt="" /></a>
                       <h5>Description: </h5>
                       <p id="portfolio-desc"></p>
                       <a id="portfolio-download" class="btn btn-large btn-success">Download here</a>
