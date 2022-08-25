@@ -551,8 +551,9 @@ section#subintro {
 
 /* portfolio */
 .portfolio-title{
-	margin-bottom:10px;
-	padding-left:10px;
+	margin-bottom:30px;
+	margin-top:-20px;
+	padding-left:20px;
 }
 
 .filter-category{
@@ -660,6 +661,14 @@ ul.filter li.active a{
 .portfolio-area .thumbnail .meta  span a,
 .portfolio-home .thumbnail .meta span a{
 	color:#737373;
+}
+
+.portfolio-item2{
+	cursor:pointer;
+}
+
+.portfolio-item2:hover .caption h4 a{
+	text-decoration: underline;
 }
 
 .pagination-btn{

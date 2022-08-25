@@ -100,11 +100,9 @@
                   <div class="span3">
                     <div class="thumbnail">
                       <div class="image-wrapp">
-                        <img src="${projectsList[i].image}?w=300&h=300" alt="Portfolio Project" title="${projectsList[i].name}" />
-                        <article class="da-animate da-slideFromRight" style="display: block;">
-                          <a class="link_post" href="${projectsList[i].url}"><span class="fa fa-link"></span></a>
-                          <span><a class="zoom" href="https://blazed.quest/portfolio.html?p=project&id=${projectsList[i].id}"><span class="fa fa-eye"></span></a></span>
-                        </article>
+                        <a href="${projectsList[i].url}">
+                          <img src="${projectsList[i].image}?w=300&h=300" alt="Portfolio Project" title="${projectsList[i].name}" />
+                        </a>
                       </div>
                       <div class="caption">
                         <h4><a href="${projectsList[i].url}">${projectsList[i].name}</a></h4>
