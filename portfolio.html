@@ -62,17 +62,16 @@
       }
 
       async function getProjects(db){
-        const currentPage = parseInt(document.getElementById('page-num').innerHTML);
-        const projectsCol = collection(db, 'projects');
+        let currentPage = 1;
         let q = null;
-        if(currentPage === 1){
-          q = query(projectsCol, limit(9));
-          document.getElementById('page-num').value = "1";
-        } else {
+        const pageNum = document.getElementById('page-num');
+        if(pageNum){
+          currentPage = parseInt(pageNum.innerHTML);
           q = query(projectsCol, limit(8*currentPage));
-          document.getElementById('page-num').value = `${currentPage}`;
+        } else {
+          q = query(projectsCol, limit(9));
         }
-        
+        const projectsCol = collection(db, 'projects');
         const snapshot = await getDocs(q);
         const projectsList = snapshot.docs.map(doc => doc.data());
         if(projectsList.length >= 1){
