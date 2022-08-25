@@ -116,11 +116,8 @@
 
       async function getProjects(db, startPlace){
         const projectsCol = collection(db, 'projects');
-        if(startPlace === null){
-          const q = query(projectsCol, limit(8));
-        } else {
-          const q = query(projectsCol, limit(8), startAt(startPlace));
-        }
+        //const q = query(projectsCol, limit(8), startAt(startPlace));
+        const q = query(projectsCol, limit(8));
         const snapshot = await getDocs(q);
         const projectsList = snapshot.docs.map(doc => doc.data());
         if(projectsList.length >= 1){
