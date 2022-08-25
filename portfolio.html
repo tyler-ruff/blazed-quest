@@ -64,7 +64,7 @@
       async function getProjects(db, currentPage){
         const projectsCol = collection(db, 'projects');
         let q = null;
-        if(startPlace === null){
+        if(currentPage === 1){
           q = query(projectsCol, limit(9));
         } else {
           q = query(projectsCol, limit(8*currentPage));
@@ -113,8 +113,7 @@
     function render(pPage, currentPage){
           switch(pPage){
             case "projects":
-              startPlace = getPagination(db, 'projects', 'projects', 8);
-              getProjects(db, null);
+              getProjects(db, currentPage);
               break;
             case "websites":
               getWebsites(db);
