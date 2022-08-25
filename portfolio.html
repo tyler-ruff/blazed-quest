@@ -61,8 +61,8 @@
         const prevItem = f('li');
         const prevLink = f('a');
         prevLink.innerHTML = "Prev";
-        if(currentPage >= 1){
-          prevLink.href = `https://blazed.quest/portfolio.html?p=${page}&n=${currentPage-1}`;
+        if(1 >= 1){
+          prevLink.href = `https://blazed.quest/portfolio.html?p=${page}&n=${1-1}`;
         } else {
           prevLink.disabled = true;
         }
@@ -85,7 +85,7 @@
         const nextLink = f('a');
         nextLink.innerHTML = "Next";
         if(currentPage <= Math.ceil(totalPages / numPage)){
-          nextLink.href = `https://blazed.quest/portfolio.html?p=${page}&n=${currentPage+1}`;
+          nextLink.href = `https://blazed.quest/portfolio.html?p=${page}&n=${1+1}`;
         } else {
           nextLink.disabled = true;
         }
