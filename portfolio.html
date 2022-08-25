@@ -106,13 +106,12 @@
                       </div>
                       <div class="caption">
                         <h4><a href="${projectsList[i].url}">${projectsList[i].name}</a></h4>
-                        <p>${projectsList[i].desc}</p>
+                        <p><a href="${projectsList[i].url}">${projectsList[i].desc}</a></p>
                       </div>
                     </div>
                   </div>
                 </li>
               `;
-              document.getElementById('portfolio-'+i).addEventListener('mouseup', goto);
               
               if(i === (projectsList.length-2)){
                 const lastItem = projectsList[projectsList.length-2].name;
@@ -149,10 +148,6 @@
           }
         }
       }
-
-    function goto(event){
-      window.location.href = event.currentTarget.dataset.href;
-    }
     function nextPage(event){
       const newPage = parseInt(document.getElementById('page-num').innerHTML) + 1;
       document.getElementById('page-num').innerHTML = `${newPage}`;

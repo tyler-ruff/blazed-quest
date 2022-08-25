@@ -671,6 +671,14 @@ ul.filter li.active a{
 	text-decoration: underline;
 }
 
+.portfolio-item2:hover .caption p a{
+	color: #333;
+}
+
+.portfolio-item2:hover .caption p a:hover{
+	text-decoration: none;
+}
+
 .pagination-btn{
 	cursor: pointer;
 }
