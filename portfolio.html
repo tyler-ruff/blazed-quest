@@ -59,7 +59,7 @@
         const totalList = snapshot.docs.map(doc => doc.data());
         let totalPages = 0; 
         if(totalList.length >= 1){
-          totalPages = Math.ceil(numPage / totalList.length);
+          totalPages = Math.ceil(totalList.length / numPage);
         }
         const prevItem = f('li');
         const prevLink = f('a');
