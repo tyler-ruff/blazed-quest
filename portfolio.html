@@ -83,10 +83,10 @@
         }
 
         if((currentPage >= Math.ceil(count / 8))){
-          document.getElementById('portfolio-info').innerHTML = `Viewing: ${Math.floor(count / 8) + 8} of ${count} Projects.`;
+          document.getElementById('portfolio-info').innerHTML = `Viewing: ${Math.floor(count / 8) + 8} of ${count-1} Projects.`;
         }
         else {
-          document.getElementById('portfolio-info').innerHTML = `Viewing: ${currentPage*8} of ${count} Projects.`;
+          document.getElementById('portfolio-info').innerHTML = `Viewing: ${currentPage*8} of ${count-1} Projects.`;
         }
 
         if(q !== null){
