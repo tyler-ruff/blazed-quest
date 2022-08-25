@@ -93,10 +93,10 @@ function portfolio(){
                 <div class="span8">
                 <article class="blog-post">
                     <div class="tooltip-demo headline">
-                      <h2>
+                      <h4>
                         <span id="portfolio-title"></span>
-                      </h2>
-                      <span class="comment"><a id="portfolio-tocomments" data-rel="tooltip" data-placement="top">? comments</a></span>
+                      </h4>
+                      <span class="comment"><a id="portfolio-tocomments" data-rel="tooltip" data-placement="top">View comments</a></span>
                     </div>
                     <div class="clearfix"></div>
                     <div class="well">
