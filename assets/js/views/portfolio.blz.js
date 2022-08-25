@@ -473,14 +473,7 @@ function projects(){
               </ul>
             </div>
             <div class="pagination pagination-right">
-              <ul>
-                <li><a href="#">Prev</a></li>
-                <li class="active"><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-                <li><a href="#">Next</a></li>
-              </ul>
+              <ul id="pagination-top"></ul>
             </div>
           </div>
         </div>
@@ -490,14 +483,7 @@ function projects(){
         <div class="row">
           <div class="span12">
             <div class="pagination">
-              <ul>
-                <li><a href="#">Prev</a></li>
-                <li><a href="#">1</a></li>
-                <li class="active"><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-                <li><a href="#">Next</a></li>
-              </ul>
+              <ul id="pagination-bottom"></ul>
             </div>
           </div>
         </div>

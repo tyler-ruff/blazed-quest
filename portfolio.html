@@ -52,6 +52,52 @@
         numPage = 1;
       }
 
+      async function getPagination(db, type, page, currentPage, numPage){
+        const totalCol = collection(db, type);
+        const q = query(totalCol);
+        const snapshot = await getDocs(q);
+        const totalList = snapshot.docs.map(doc => doc.data());
+        if(totalList.length >= 1){
+          totalPages = Math.ceil(numPage / totalList.length);
+        }
+        const prevItem = f('li');
+        const prevLink = f('a');
+        prevLink.innerHTML = "Prev";
+        if(currentPage >= 1){
+          prevLink.href = `https://blazed.quest/portfolio.html?p=${page}&n=${currentPage-1}`;
+        } else {
+          prevLink.disabled = true;
+        }
+        prevItem.appendChild(prevLink);
+        document.getElementById('pagination-top').appendChild(prevItem);
+        document.getElementById('pagination-bottom').appendChild(prevItem);
+
+        for(let i = 0; i < totalPages; i++){
+          const pageItem = f('li');
+          const pageLink = f('a');
+          pageLink.href = `https://blazed.quest/portfolio.html?p=${page}&n=${i+1}`;
+          pageLink.innerHTML = `${i+1}`;
+          if(currentPage === (i + 1)){
+            pageLink.classList.add('active');
+          }
+          pageItem.appendChild(pageLink);
+          document.getElementById('pagination-top').appendChild(pageItem);
+          document.getElementById('pagination-bottom').appendChild(pageItem);
+        }
+
+        const nextItem = f('li');
+        const nextLink = f('a');
+        prevLink.innerHTML = "Next";
+        if(currentPage <= Math.ceil(totalPages / numPage)){
+          nextLink.href = `https://blazed.quest/portfolio.html?p=${page}&n=${currentPage+1}`;
+        } else {
+          nextLink.disabled = true;
+        }
+        nextItem.appendChild(nextLink);
+        document.getElementById('pagination-top').appendChild(nextItem);
+        document.getElementById('pagination-bottom').appendChild(nextItem);
+      }
+
       async function getWebsites(db){
 
       }
@@ -97,6 +143,7 @@
       switch(pPage){
         case "projects":
           getProjects(db);
+          getPagination(db, 'projects', 'projects', numPage, 8);
           break;
         case "websites":
           getWebsites(db);
