@@ -62,6 +62,8 @@
       }
 
       async function getProjects(db){
+        const projectsCol = collection(db, 'projects');
+
         let currentPage = 1;
         let q = null;
         const pageNum = document.getElementById('page-num');
@@ -71,8 +73,10 @@
         } else {
           q = query(projectsCol, limit(9));
         }
-        const projectsCol = collection(db, 'projects');
-        const snapshot = await getDocs(q);
+
+        if(q !== null){
+          const snapshot = await getDocs(q);
+        }
         const projectsList = snapshot.docs.map(doc => doc.data());
         if(projectsList.length >= 1){
           for(let i = 0; i < (projectsList.length-1); i++){
