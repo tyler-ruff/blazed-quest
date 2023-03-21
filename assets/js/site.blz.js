@@ -14,34 +14,6 @@ const siteConfig = {
         icon: "home"
     },
     {
-        text: "Solutions",
-        url: "https://blazed.quest/solutions.html",
-        theme: "primary",
-        icon: "star",
-        submenu: [
-            {
-                text: "Web Development",
-                url: "https://blazed.quest/solutions.html?p=web",
-            },
-            {
-                text: "Software Development",
-                url: "https://blazed.quest/solutions.html?p=software",
-            },
-            {
-                text: "Video Game Development",
-                url: "https://blazed.quest/solutions.html?p=games",
-            },
-            {
-                text: "Film Production & Editing",
-                url: "https://blazed.quest/solutions.html?p=film",
-            },
-            {
-                text: "Marketing & Social Media",
-                url: "https://blazed.quest/solutions.html?p=marketing",
-            },
-        ]
-    },
-    {
         text: "Company",
         theme: "danger",
         icon: "leaf",
@@ -93,22 +65,32 @@ const siteConfig = {
         text: "Blog",
         theme: "info",
         icon: "bullhorn",
-        url: "https://blazed.dev/news.html",
+        url: "https://blazed.xyz/",
         submenu: [
-            {
-                text: "Project Updates",
-                url: "https://blazed.dev/news.html",
-            },            
-            {
-                text: "Learn",
-                url: "https://blazed.dev/learn.html",
-            },
             {
                 text: "Blazed Publishing",
                 url: "https://blazed.xyz/",
+            },
+            {
+                text: "Blazed Development",
+                url: "https://blazed.dev/",
+            },
+            {
+                text: "Munch Magazine",
+                url: "https://munch-mag.com/",
+            }            
+            {
+                text: "Ixis",
+                url: "https://ixis.space/",
             }
         ]
-    }, 
+    },
+    {
+        text: "Solutions",
+        url: "https://blazed.space/",
+        theme: "primary",
+        icon: "star"
+    },
     {
         text: "Contact",
         theme: "inverse",

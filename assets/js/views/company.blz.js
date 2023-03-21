@@ -45,10 +45,10 @@ function agreements(){
 							TERMS OF SERVICE AGREEMENT
 						</h2>
 						<h3>
-							Blazed One Solution
+							Blazed Software Interactive
 						</h3>
 						<p>
-							Updated: 5/14/2022
+							Updated: 3/21/2023
 						</p>
 						<hr />
 						<h3>
@@ -58,7 +58,8 @@ function agreements(){
 						<p>
 							These Terms of Service constitute a legally binding agreement made between you,
 							whether personally or on behalf of an entity ("you") and [Blazed Labs LLC] ("we," "us"
-							or "our"), concerning your access to and use of the [blz.one] website as well as any
+							or "our"), concerning your access to and use of the [blz.one, blazed.space, blazed.dev, 
+								blazed.software, blazed.systems, blazed.tel, blazed.quest, blazed.xyz] website as well as any
 							other media form, media channel, mobile website or mobile application related, linked,
 							or otherwise connected thereto (collectively, the "Site").
 						</p>
@@ -124,7 +125,8 @@ function agreements(){
 						<p>
 							The Content and the Marks are provided on the Site "AS IS" for your information and
 							personal use only. Except as expressly provided in these Terms of Service, no part of
-							the Site and no Content or Marks may be copied, reproduced, aggregated, republished, uploaded, posted, publicly displayed, encoded, translated, transmitted, distributed, sold,
+							the Site and no Content or Marks may be copied, reproduced, aggregated, republished, 
+							uploaded, posted, publicly displayed, encoded, translated, transmitted, distributed, sold,
 							licensed, or otherwise exploited for any commercial purpose whatsoever, without our
 							express prior written permission
 						</p>
@@ -143,7 +145,7 @@ function agreements(){
 						<p>
 							<b>By using the Site, you represent and warrant that:</b> <br />
 							<i>
-							[(1) all registration information you submit will be true, accurate, current, and complete;
+								[(1) all registration information you submit will be true, accurate, current, and complete; <br />
 								(2) you will maintain the accuracy of such information and promptly update such
 								registration information as necessary;] <br />
 								(3) you have the legal capacity and you agree to comply with these Terms of Service; <br />
@@ -180,8 +182,14 @@ function agreements(){
 							You may not access or use the Site for any purpose other than that for which we make
 							the Site available. The Site may not be used in connection with any commercial
 							endeavors except those that are specifically endorsed or approved by us.
-							<br />
-							<b>As a user of the Site, you agree not to:</b>
+						</p>
+
+						<br />
+
+						<p>
+							<b>
+								As a user of the Site, you agree not to:
+							</b>
 						</p>
 
 						<ol>
@@ -260,8 +268,6 @@ function agreements(){
 								copy or adapt the Site's software, including but not limited to Flash, PHP, HTML,
 								JavaScript, or other code.
 							</li>
-
-
 							<li>
 								Upload or transmit (or attempt to upload or to transmit) viruses, Trojan horses, or
 								other material, including excessive use of capital letters and spamming
@@ -1320,6 +1326,7 @@ function agreements(){
 						</h3>
 						<p>
 							&bull; These <a href="https://termly.io/resources/templates/terms-of-service-template/" target="_blank">terms of service</a> were created using Termly. All rights reserved.
+							&bull; Underwritten by <a href="https://ruff-manage.com/" target="_blank">Ruff Management Inc.</a>
 						</p>
 						<hr />
 						<h3>
@@ -1328,8 +1335,8 @@ function agreements(){
 						<p>
 							In order to resolve a complaint regarding the Site or to receive further information
 							regarding use of the Site, please contact us at: <br />
-							Email: <a href="mailto:hello@blazed.space">hello@blazed.space</a> <br />
-							Telephone: <a href="tel:+18557882348">1 (855) 788-2348</a>
+							&bull; Email: <a href="mailto:hello@blazed.space">hello@blazed.space</a> <br />
+							&bull; Telephone: <a href="tel:+18557882348">1 (855) 788-2348</a>
 						</p>
 					</div>
 				</div>
@@ -2400,7 +2407,7 @@ function services(){
 								<p>
 									We build desktop and mobile applications and web applications. Discover what the Blazed Development Group can do for you.
 								</p>
-								<a href="https://blazed.dev/" target="_blank" class="btn btn-success">Visit Blazed Dev</a>
+								<a href="https://blazed.software/" target="_blank" class="btn btn-success">Visit Blazed Software</a>
 								</div>
 							</div>
 							</div>
@@ -2445,7 +2452,7 @@ function about(){
 								<p>
 									We post development updates, project news, and announcements on our blog.
 									<br />
-									<a href="https://blazed.quest/blog.html">View Our Blog</a>.
+									<a href="https://blazed.xyz/">View Our Blog</a>.
 								</p>
 								</div>
 							</div>
@@ -2479,36 +2486,37 @@ function about(){
 							</p>
 						</blockquote>
 						<h4>Our expertise</h4>
-						<label>Web/Software Development</label>
+						<label>Web Development / Software Development</label>
 						<div>
-							<a target="_blank" href="https://angular.io/">Angular</a> &nbsp; &nbsp; <a target="_blank" href="https://reactjs.com/">React</a>
-							&nbsp; &nbsp; <a target="_blank" href="https://svelte.dev/">Svelte</a> &nbsp; &nbsp; <a target="_blank" href="https://php.net/">PHP</a>
-							&nbsp; &nbsp; <a target="_blank" href="https://nodejs.org/">Node.js</a> &nbsp; &nbsp; <a target="_blank" href="https://python.org/">Python</a>
-							&nbsp; &nbsp; <a target="_blank" href="https://www.ruby-lang.org/en/">Ruby</a> &nbsp; &nbsp; <a target="_blank" href="https://go.dev/">GoLang</a> 
-							&nbsp; &nbsp; <a target="_blank" href="https://www.java.com/">Java</a> &nbsp; &nbsp; <a target="_blank" href="https://docs.microsoft.com/en-us/dotnet/csharp/">C#/.NET</a>
-						</div>
-						<br />
-						<label>Web Design</label>
-						<div>
-							<a target="_blank" href="https://tailwindcss.com/">TailwindCSS</a> &nbsp; &nbsp; <a target="_blank" href="https://getbootstrap.com/">Bootstrap</a>
-							&nbsp; &nbsp; <a target="_blank" href="https://tailwindcss.com/">TailwindCSS</a> &nbsp; &nbsp; <a target="_blank" href="https://lesscss.org/">Less</a>
-							&nbsp; &nbsp; <a target="_blank" href="https://sass-lang.com/">Sass</a> &nbsp; &nbsp; <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/SVG">SVG</a>
-							&nbsp; &nbsp; <a target="_blank" href="https://elfsight.com/?ref=e147bcdb-3178-48f1-acfd-0a8d5045322f">ElfSight</a>
+										  <a target="_blank" href="https://angular.io/">Angular</a> 
+							&nbsp; &nbsp; <a target="_blank" href="https://reactjs.com/">React</a>
+							&nbsp; &nbsp; <a target="_blank" href="https://svelte.dev/">Svelte</a> 
+							&nbsp; &nbsp; <a target="_blank" href="https://php.net/">PHP</a>
+							&nbsp; &nbsp; <a target="_blank" href="https://nodejs.org/">Node.js</a> 
+							&nbsp; &nbsp; <a target="_blank" href="https://python.org/">Python</a>
+							&nbsp; &nbsp; <a target="_blank" href="https://www.ruby-lang.org/en/">Ruby</a> 
+							&nbsp; &nbsp; <a target="_blank" href="https://go.dev/">GoLang</a> 
+							&nbsp; &nbsp; <a target="_blank" href="https://www.java.com/">Java</a> 
+							&nbsp; &nbsp; <a target="_blank" href="https://docs.microsoft.com/en-us/dotnet/csharp/">C#/.NET</a>
 						</div>
 						<br />
 						<label>Cloud Computing</label>
 						<div>
-							<a target="_blank" href="https://cloud.google.com/">Google Cloud</a> &nbsp; &nbsp; <a target="_blank" href="https://azure.microsoft.com/">Microsoft Azure</a>
-							&nbsp; &nbsp; <a target="_blank" href="https://cloud.oracle.com/">Oracle Cloud</a> &nbsp; &nbsp;  <a target="_blank" href="https://firebase.google.com/">Google Firebase</a> 
-							&nbsp; &nbsp; <a target="_blank" href="https://cloudflare.com/">CloudFlare</a> &nbsp; &nbsp; <a target="_blank" href="https://sanity.io/">SanityCMS</a>
+										  <a target="_blank" href="https://cloud.google.com/">Google Cloud</a> 
+							&nbsp; &nbsp; <a target="_blank" href="https://azure.microsoft.com/">Microsoft Azure</a>
+							&nbsp; &nbsp; <a target="_blank" href="https://cloud.oracle.com/">Oracle Cloud</a> 
+							&nbsp; &nbsp; <a target="_blank" href="https://firebase.google.com/">Google Firebase</a> 
+							&nbsp; &nbsp; <a target="_blank" href="https://cloudflare.com/">CloudFlare</a> 
+							&nbsp; &nbsp; <a target="_blank" href="https://sanity.io/">SanityCMS</a>
 						</div>
 						<br />
 						<label>Social Marketing</label>
 						<div>
-							<a target="_blank" href="https://facebook.com/">Facebook</a> &nbsp; &nbsp; <a target="_blank" href="https://twitter.com/">Twitter</a>
-							&nbsp; &nbsp; <a target="_blank" href="https://linkedin.com/">Linkedin</a> &nbsp; &nbsp;  <a target="_blank" href="https://github.com/">GitHub</a> 
-							&nbsp; &nbsp; <a target="_blank" href="https://www.alignable.com/">Alignable</a> &nbsp; &nbsp; <a target="_blank" href="https://sanity.io/">Woodrise</a>
-							&nbsp; &nbsp; <a target="_blank" href="https://tribe.so/?ref=tylerruff4">Tribe</a> &nbsp; &nbsp; <a target="_blank" href="https://anytrack.io/?utm_campaign=referral_campaign&utm_medium=referral&utm_source=rewardful&via=74dc68">AnyTrack</a>
+										  <a target="_blank" href="https://facebook.com/">Facebook</a> 
+							&nbsp; &nbsp; <a target="_blank" href="https://twitter.com/">Twitter</a>
+							&nbsp; &nbsp; <a target="_blank" href="https://linkedin.com/">Linkedin</a> 
+							&nbsp; &nbsp; <a target="_blank" href="https://github.com/">GitHub</a> 
+							&nbsp; &nbsp; <a target="_blank" href="https://www.alignable.com/">Alignable</a>
 						</div>
 					</div>
 				</div>
