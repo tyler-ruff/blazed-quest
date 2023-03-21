@@ -77,8 +77,8 @@ const siteConfig = {
             },
             {
                 text: "Munch Magazine",
-                url: "https://munch-mag.com/",
-            }            
+                url: "https://munch-mag.com//",
+            },
             {
                 text: "Ixis",
                 url: "https://ixis.space/",
