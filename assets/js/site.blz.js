@@ -297,7 +297,7 @@ function build_footer(config){
     const emailUpdatesInner = f('div');
     emailUpdatesInner.classList.add('input-prepend', 'input-append');
     const subscribeButton = f('a');
-    subscribeButton.href = "https://blazed.quest/index.html?p=subscribe";
+    subscribeButton.href = "https://blazed.quest/company.html?p=subscribe";
     subscribeButton.classList.add('btn', 'btn-inverse');
     subscribeButton.innerHTML = "Subscribe!";
     const socialList = f('ul');

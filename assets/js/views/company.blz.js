@@ -6,6 +6,12 @@
 function build_routes(page){
     let data = {};
     switch(page){
+		case 'subscribe':
+          data = {
+            pageNum: 9000,
+            content: subscribe()
+          };
+          	break;
 		case 'sa':
 			data = {
 				pageNum: 9,
@@ -34,6 +40,15 @@ function build_routes(page){
         }
     return data;
 }
+
+function subscribe(){
+	return `
+	  <div style="position: relative;text-align:center;margin-left:auto;margin-right:auto; padding-top:10px; padding-bottom:10px;">
+		<iframe style="width:100%; max-width:600px; margin-top:25px; margin-bottom:25px; min-height:300px; max-height:500px;" data-w-type="embedded" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://0wjuo.mjt.lu/wgt/0wjuo/pgs/form?c=9eddde35" height="390px"></iframe>
+	  </div>
+	  <script type="text/javascript" src="https://app.mailjet.com/pas-nc-embedded-v1.js"></script>
+	`;
+  }
 
 function agreements(){
 	return `
