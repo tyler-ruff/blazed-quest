@@ -38,7 +38,7 @@ const siteConfig = {
         ]
     },
     {
-        text: "Portfolio",
+        text: "Projects",
         theme: "warning",
         icon: "camera",
         url: "https://blazed.quest/portfolio.html?p=projects"
