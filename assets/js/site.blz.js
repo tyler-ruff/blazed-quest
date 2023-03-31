@@ -41,25 +41,7 @@ const siteConfig = {
         text: "Portfolio",
         theme: "warning",
         icon: "camera",
-        url: "https://blazed.quest/portfolio.html",
-        submenu: [
-            {
-                text: "Projects",
-                url: "https://blazed.quest/portfolio.html?p=projects",
-            },
-            {
-                text: "Websites",
-                url: "https://blazed.quest/portfolio.html?p=websites",
-            },
-            {
-                text: "Software",
-                url: "https://blazed.quest/portfolio.html?p=software",
-            },
-            {
-                text: "Graphics/Images",
-                url: "https://blazed.quest/portfolio.html?p=images",
-            },
-        ]
+        url: "https://blazed.quest/portfolio.html?p=projects"
     }, 
     {
         text: "Blog",
