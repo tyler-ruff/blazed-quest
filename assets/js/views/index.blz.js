@@ -25,42 +25,42 @@ function home(){
                     <div class="row">
                     <div class="span12">
                         <div class="camera_wrap camera_black_skin" id="camera_wrap_2">
-                        <div data-thumb="assets/img/slides/camera/img1.png" data-src="assets/img/slides/camera/img1.png">
+                        <div data-thumb="assets/img/slides/slideshow/img1.png" data-src="assets/img/slides/slideshow/img1.png">
                             <div class="camera_caption fadeFromBottom">
-                            <h2>Ixis Image Editor</h2>
+                            <h2>Blazed One</h2>
                             <div class="hidden-phone">
                                 <p>
-                                  Ixis is a photo editor for web, no download required! <a target="_blank" href="https://ixis.space/">Check it out</a>.
+                                  The New Free Speech Social Network: <a target="_blank" href="https://blz.one/">Check it out</a>.
                                 </p>
                             </div>
                             </div>
                         </div>
-                        <div data-thumb="assets/img/slides/camera/img2.png" data-src="assets/img/slides/camera/img2.png">
+                        <div data-thumb="assets/img/slides/slideshow/img2.png" data-src="assets/img/slides/slideshow/img2.png">
                             <div class="camera_caption fadeFromBottom">
-                            <h2>Vexio Crowdfunding</h2>
+                            <h2>Ruff Management</h2>
                             <div class="hidden-phone">
                                 <p>
-                                  Crowdfunding for a new age. <a target="_blank" href="https://vexio.quest/">Check it out</a>.
+                                  Equity management firm based out of New Jersey: <a target="_blank" href="https://ruff-manage.com/">Check it out</a>.
                                 </p>
                             </div>
                             </div>
                         </div>
-                        <div data-thumb="assets/img/slides/camera/img3.png" data-src="assets/img/slides/camera/img3.png">
+                        <div data-thumb="assets/img/slides/slideshow/img3.png" data-src="assets/img/slides/slideshow/img3.png">
                             <div class="camera_caption fadeFromBottom">
-                            <h2>Munch Magazine</h2>
+                            <h2>Blazed City</h2>
                             <div class="hidden-phone">
                                 <p>
-                                  Munch Magazine is a gamer's paradise, gaming news, reviews, and editorials. <a target="_blank" href="https://munch-mag.com/">Check it out</a>.
+                                  Discover the Blazed Virtual City: <a target="_blank" href="https://blazed.city/">Check it out</a>.
                                 </p>
                             </div>
                             </div>
                         </div>
-                        <div data-thumb="assets/img/slides/camera/img4.png" data-src="assets/img/slides/camera/img4.png">
+                        <div data-thumb="assets/img/slides/slideshow/img4.png" data-src="assets/img/slides/slideshow/img4.png">
                             <div class="camera_caption fadeFromBottom">
-                            <h2>Beez Affiliate Marketing</h2>
+                            <h2>Beez Marketing</h2>
                             <div class="hidden-phone">
                                 <p>
-                                  Beez has great sources for any kind of problem. <a target="_blank" href="https://beez.top/">Check it out</a>.
+                                  Beez has amazing solutions to increase brand exposure: <a target="_blank" href="https://beez.top/">Check it out</a>.
                                 </p>
                             </div>
                             </div>

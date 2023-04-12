@@ -2468,51 +2468,50 @@ function about(){
 			<div class="container">
 				<div class="row">
 					<div class="span6">
-
-					<div id="myCarousel" class="carousel slide">
-						<div class="carousel-inner">
-							<div class="item active">
-								<img src="https://blazed.sirv.com/ibis/blazed-gallery.jpg" alt="Ibis Painting" />
-								<div class="carousel-caption success">
-								<h4>
-									Discover our incredible portfolio.
-								</h4>
-								<p>
-									We've assembled a stunning portfolio of websites and software, which we are quite proud of.
-									<a href="https://blazed.quest/portfolio.html">View Our Portfolio</a>.
-								</p>
+						<div id="myCarousel" class="carousel slide">
+							<div class="carousel-inner">
+								<div class="item active">
+									<img src="https://blazed.sirv.com/ibis/blazed-gallery.jpg" alt="Ibis Painting" />
+									<div class="carousel-caption success">
+									<h4>
+										Discover our current projects.
+									</h4>
+									<p>
+										Check out the projects we're working on.
+										<a href="https://blazed.quest/portfolio.html?p=projects">View Our Projects</a>.
+									</p>
+									</div>
+								</div>
+								<div class="item">
+									<img src="https://blazed.sirv.com/ibis/blazed-arena.jpg" alt="Ibis Arena" />
+									<div class="carousel-caption success">
+									<h4>
+										Check out the latest news and announcements.
+									</h4>
+									<p>
+										We post development updates, project news, and announcements on our blog.
+										<br />
+										<a href="https://blazed.xyz/">View Our Blog</a>.
+									</p>
+									</div>
+								</div>
+								<div class="item">
+									<img src="https://blazed.sirv.com/logo/john-mcmahon-ljjcoULkxL8-unsplash.jpg?w=428&h=430" alt="" />
+									<div class="carousel-caption success">
+									<h4>
+										Learn more about Blazed Labs.
+									</h4>
+									<p>
+										To learn more about Blazed Labs, drop by our website.
+										<br />
+										<a href="https://blazedlabs.com/">View Our Website</a>.
+									</p>
+									</div>
 								</div>
 							</div>
-							<div class="item">
-								<img src="https://blazed.sirv.com/ibis/blazed-arena.jpg" alt="Ibis Arena" />
-								<div class="carousel-caption success">
-								<h4>
-									Check out the latest news and announcements.
-								</h4>
-								<p>
-									We post development updates, project news, and announcements on our blog.
-									<br />
-									<a href="https://blazed.xyz/">View Our Blog</a>.
-								</p>
-								</div>
-							</div>
-							<div class="item">
-								<img src="https://blazed.sirv.com/logo/john-mcmahon-ljjcoULkxL8-unsplash.jpg?w=428&h=430" alt="" />
-								<div class="carousel-caption success">
-								<h4>
-									Learn more about Blazed Labs.
-								</h4>
-								<p>
-									To learn more about Blazed Labs, drop by our website.
-									<br />
-									<a href="https://blazedlabs.com/">View Our Website</a>.
-								</p>
-								</div>
-							</div>
+							<a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+							<a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
 						</div>
-						<a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-						<a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
-					</div>
 					</div>
 
 					<div class="span6">
@@ -2578,37 +2577,37 @@ function about(){
 
 							<li>
 							<div class="tooltip-demo thumbnail">
-								<a href="https://ac-limo.com/" target="_blank" data-rel="tooltip" data-placement="top" title="Party Transportation"><img src="https://blazed.sirv.com/blazed.quest/party-transportation.png?w=300&h=100" alt="" /></a>
+								<a href="https://ac-limo.com/" target="_blank" data-rel="tooltip" data-placement="top" title="Party Transportation"><img src="https://blazed.sirv.com/blazed.quest/clients/party-transportation.png?w=300&h=100" alt="" /></a>
 							</div>
 							</li>
 
 							<li>
 							<div class="tooltip-demo thumbnail">
-								<a href="https://rtmtransit.com/" target="_blank" data-rel="tooltip" data-placement="top" title="RTM Transportation LLC"><img src="https://blazed.sirv.com/blazed.quest/rtm-transit.png?w=300&h=100" alt="" /></a>
+								<a href="https://rtmtransit.com/" target="_blank" data-rel="tooltip" data-placement="top" title="RTM Transportation LLC"><img src="https://blazed.sirv.com/blazed.quest/clients/rtm-transit.png?w=300&h=100" alt="" /></a>
 							</div>
 							</li>
 
 							<li>
 							<div class="tooltip-demo thumbnail">
-								<a href="https://oceancarservice.com/" target="_blank" data-rel="tooltip" data-placement="top" title="Ocean Car Service"><img src="https://blazed.sirv.com/blazed.quest/ocs.png?w=300&h=100" alt="" /></a>
+								<a href="https://oceancarservice.com/" target="_blank" data-rel="tooltip" data-placement="top" title="Ocean Car Service"><img src="https://blazed.sirv.com/blazed.quest/clients/ocs.png?w=300&h=100" alt="" /></a>
 							</div>
 							</li>
 
 							<li>
 							<div class="tooltip-demo thumbnail">
-								<a href="https://ruff-manage.com/" target="_blank" data-rel="tooltip" data-placement="top" title="Ruff Management Inc."><img src="https://blazed.sirv.com/blazed.quest/ruff-manage.png?w=300&h=100" alt="" /></a>
+								<a href="https://ruff-manage.com/" target="_blank" data-rel="tooltip" data-placement="top" title="Ruff Management Inc."><img src="https://blazed.sirv.com/blazed.quest/clients/ruff-manage.png?w=300&h=100" alt="" /></a>
 							</div>
 							</li>
 
 							<li>
 							<div class="tooltip-demo thumbnail">
-								<a href="http://operaonthego.org/" target="_blank" data-rel="tooltip" data-placement="top" title="Opera on the Go"><img src="https://blazed.sirv.com/blazed.quest/ootg.png?w=300&h=100" alt="" /></a>
+								<a href="http://operaonthego.org/" target="_blank" data-rel="tooltip" data-placement="top" title="Opera on the Go"><img src="https://blazed.sirv.com/blazed.quest/clients/ootg.png?w=300&h=100" alt="" /></a>
 							</div>
 							</li>
 
 							<li>
 							<div class="tooltip-demo thumbnail">
-								<a href="https://blazed.games/" data-rel="tooltip" target="_blank" data-placement="top" title="Concrete Games LLC"><img src="https://blazed.sirv.com/blazed.quest/concrete-games.png?w=300&h=100" alt="" /></a>
+								<a href="https://blazed.games/" data-rel="tooltip" target="_blank" data-placement="top" title="Concrete Games LLC"><img src="https://blazed.sirv.com/blazed.quest/clients/concrete-games.png?w=300&h=100" alt="" /></a>
 							</div>
 							</li>
 
