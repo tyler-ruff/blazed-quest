@@ -1875,7 +1875,7 @@ function faq(){
 										You may file a support ticket using any one of the following methods:
 									</p>
 									<ul>
-										<li>Web Form: <a href="https://www.blazed.dev/contact.html" target="_blank">Click Here</a></li>
+										<li>Web Form: <a href="https://www.blazed.systems/support" target="_blank">Click Here</a></li>
 										<li>Email: <a href="mailto:support@blazed.dev" target="_blank">support@blazed.dev</a></li>
 										<li><abbr title="Telephone">Tel:</abbr> <a href="tel:+18557882348" target="_blank">1 (855) 788-2348</a></li>
 									</ul>
