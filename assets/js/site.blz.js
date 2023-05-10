@@ -331,7 +331,7 @@ function build_footer(config){
     alignRight.classList.add('pull-right');
     const credits = f('div');
     credits.classList.add('credits');
-    credits.innerHTML = `Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>`;
+    credits.innerHTML = `Designed by <a href="https://blazedlabs.com/">Blazed Labs</a>`;
     alignRight.appendChild(credits);
     themeAttrWrapper.appendChild(alignRight);
     veryBottomInnerRow.appendChild(themeAttrWrapper);
