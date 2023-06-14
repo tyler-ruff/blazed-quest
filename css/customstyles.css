@@ -66,8 +66,12 @@ body {
 .gi-5x{font-size: 5em;}
 
 
-
-
+/* Fix for sidebar mobile display */
+@media screen and (max-width: 991px) {
+    #tg-sb-content{
+        display: inline-grid;
+    }
+}
 
 .breadcrumb > .active {color: #777 !important;}
 
