@@ -1,6 +1,17 @@
-// Place your settings in this file to overwrite default and user settings.
 {
+  "css.customData": ["./vscode.tailwind.json"],
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "astro", // Enable .astro
+    "typescript", // Enable .ts
+    "typescriptreact" // Enable .tsx
+  ],
   "files.associations": {
-    "*.html": "liquid"
+    "*.mdx": "markdown"
+  },
+  "prettier.documentSelectors": ["**/*.astro"],
+  "[astro]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   }
 }
