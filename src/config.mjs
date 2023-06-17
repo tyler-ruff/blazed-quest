@@ -7,9 +7,9 @@ const CONFIG = {
   basePathname: '/',
   trailingSlash: false,
 
-  title: 'AstroWind — Free template for create a website with Astro + Tailwind CSS',
+  title: 'Blazed Quest - Project management service and products from Blazed Labs LLC.',
   description:
-    '🚀 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs.',
+    'Suitable for small to enterprise large business, and anywhere in between. The Blazed Quest solution helps you get it done.',
   defaultImage: defaultImage,
 
   defaultTheme: 'system', // Values: "system" | "light" | "dark" | "light:only" | "dark:only"
@@ -21,7 +21,7 @@ const CONFIG = {
     year: 'numeric',
     month: 'short',
     day: 'numeric',
-    timeZone: 'UTC',
+    timeZone: 'EST',
   }),
 
   googleAnalyticsId: false, // or "G-XXXXXXXXXX",
