@@ -1,9 +1,9 @@
 import defaultImage from './assets/images/default.png';
 
 const CONFIG = {
-  name: 'AstroWind',
+  name: 'Quest',
 
-  origin: 'https://astrowind.vercel.app',
+  origin: 'https://blazed.quest',
   basePathname: '/',
   trailingSlash: false,
 
