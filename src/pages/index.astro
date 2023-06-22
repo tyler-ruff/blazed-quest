@@ -3,13 +3,7 @@ import { SITE } from '~/config.mjs';
 import Layout from '~/layouts/PageLayout.astro';
 
 import Hero from '~/components/widgets/Hero.astro';
-import Note from '~/components/widgets/Note.astro';
-
-import Content from '~/components/widgets/Content.astro';
 import LatestPosts from '~/components/blog/LatestPosts.astro';
-import FAQs from '~/components/widgets/FAQs.astro';
-import Stats from '~/components/widgets/Stats.astro';
-import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const meta = {
   title: SITE.title,
@@ -22,7 +16,7 @@ const meta = {
 
   <Hero
     callToAction={{ text: 'Use the App', href: 'https://app.blazed.quest/' }}
-    callToAction2={{ text: 'Learn more', href: '/about' }}
+    callToAction2={{ text: 'Learn more', href: '/about', icon: 'tabler:info-square' }}
     image={{ src: import('~/assets/images/hero.png'), alt: 'AstroWind Hero Image' }}
   >
     <Fragment slot="title">
@@ -43,12 +37,8 @@ const meta = {
       <span class="block mb-1 sm:hidden font-bold text-blue-600">
         Blazed Quest: Elite Project Management.
       </span> 
-      Next-gen project management solution. It integrates with your favorite providers (such as Jira and Google),
-      features AI enhanced tools, and even on-prem resources.  
     </Fragment>
   </Hero>
-
-  <Note />
 
   <LatestPosts
       title="Find out more content in our Blog"
@@ -63,79 +53,5 @@ const meta = {
       'astrowind-template-in-depth.md',
       ]}
   />
-
   
-  <!-- FAQs Widget ******************* -->
-
-  <FAQs
-    title="Frequently Asked Questions"
-    subtitle="Duis turpis dui, fringilla mattis sem nec, fringilla euismod neque. Morbi tincidunt lacus nec tortor scelerisque pulvinar."
-    highlight="FAQs"
-    items={[
-      [
-        {
-          question: 'What do I need to start?',
-          answer:
-            'Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds. Many say exploration is part of our destiny, but it’s actually our duty to future generations.',
-        },
-        {
-          question: 'How to install the Astro + Tailwind CSS template?',
-          answer:
-            "Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing.",
-        },
-        {
-          question: "What's something that you don't understand?",
-          answer:
-            "A flower in my garden, a mystery in my panties. Heart attack never stopped old Big Bear. I didn't even know we were calling him Big Bear.",
-        },
-      ],
-      [
-        {
-          question: "What's an example of when you changed your mind?",
-          answer:
-            "Michael Knight a young loner on a crusade to champion the cause of the innocent. The helpless. The powerless in a world of criminals who operate above the law. Here he comes Here comes Speed Racer. He's a demon on wheels.",
-        },
-        {
-          question: 'What is something that you would like to try again?',
-          answer:
-            "A business big enough that it could be listed on the NASDAQ goes belly up. Disappears! It ceases to exist without me. No, you clearly don't know who you're talking to, so let me clue you in.",
-        },
-        {
-          question: 'If you could only ask one question to each person you meet, what would that question be?',
-          answer:
-            "This is not about revenge. This is about justice. A lot of things can change in twelve years, Admiral. Well, that's certainly good to know. About four years. I got tired of hearing how young I looked.",
-        },
-      ],
-    ]}
-  />
-
-  <!-- Stats Widget ****************** -->
-
-  <Stats
-    items={[
-      { name: 'Downloads', value: '132K' },
-      { name: 'Stars', value: '24.8K' },
-      { name: 'Forks', value: '10.3K' },
-      { name: 'Users', value: '48.4K' },
-    ]}
-  />
-
-  <!-- CallToAction Widget *********** -->
-
-  <CallToAction
-    callToAction={{
-      text: 'Get template',
-      href: 'https://github.com/onwidget/astrowind',
-      icon: 'tabler:download',
-    }}
-  >
-    <Fragment slot="title">
-      Astro + <br class="block sm:hidden" /><span class="sm:whitespace-nowrap">Tailwind CSS</span>
-    </Fragment>
-
-    <Fragment slot="subtitle">
-      Be very surprised by these huge fake numbers you are seeing on this page. <br class="hidden md:inline" />Don't
-      waste more time! :P
-    </Fragment>
-  </CallToAction>
 </Layout>

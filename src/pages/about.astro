@@ -5,7 +5,10 @@ import Layout from '~/layouts/PageLayout.astro';
 import Content from '~/components/widgets/Content.astro';
 import Features from '~/components/widgets/Features.astro';
 import Features2 from '~/components/widgets/Features2.astro';
+import Note from '~/components/widgets/Note.astro';
+import Stats from '~/components/widgets/Stats.astro';
 import Steps from '~/components/widgets/Steps.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const meta = {
   title: SITE.title,
@@ -15,6 +18,9 @@ const meta = {
 ---
 
 <Layout {meta}>
+
+    <Note />
+
      <Features
         highlight="Features"
         title="What you get with AstroWind"
@@ -62,6 +68,7 @@ const meta = {
         ],
         ]}
     />
+
     <Features2
         title="Most used widgets"
         subtitle="Provides frequently used components for building websites using Tailwind CSS"
@@ -184,35 +191,62 @@ const meta = {
       alt: 'Vintage Image',
     }}
   />
+
     <Steps
-    title="Get your dream website up and running in no time with AstroWind."
-    items={[
-      {
-        title: 'Step 1: <span class="font-medium">Download</span>',
-        description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mirisus tempus nulla, sed porttitor est nibh at nulla. Praesent placerat enim ut ex tincidunt vehicula.',
-        icon: 'tabler:package',
-      },
-      {
-        title: 'Step 2: <span class="font-medium">Add content</em>',
-        description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mirisus tempus nulla, sed porttitor est nibh at nulla.',
-        icon: 'tabler:letter-case',
-      },
-      {
-        title: 'Step 3: <span class="font-medium">Customize styles</span>',
-        description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mirisus tempus nulla, sed porttitor est nibh at nulla. Praesent placerat enim ut ex tincidunt vehicula. Fusce sit amet dui tellus.',
-        icon: 'tabler:paint',
-      },
-      {
-        title: 'Ready!',
-        icon: 'tabler:check',
-      },
-    ]}
-    image={{
-      src: import('~/assets/images/creativity.jpg'),
-      alt: 'Steps image',
+        title="Get your dream website up and running in no time with AstroWind."
+        items={[
+        {
+            title: 'Step 1: <span class="font-medium">Download</span>',
+            description:
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mirisus tempus nulla, sed porttitor est nibh at nulla. Praesent placerat enim ut ex tincidunt vehicula.',
+            icon: 'tabler:package',
+        },
+        {
+            title: 'Step 2: <span class="font-medium">Add content</em>',
+            description:
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mirisus tempus nulla, sed porttitor est nibh at nulla.',
+            icon: 'tabler:letter-case',
+        },
+        {
+            title: 'Step 3: <span class="font-medium">Customize styles</span>',
+            description:
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mirisus tempus nulla, sed porttitor est nibh at nulla. Praesent placerat enim ut ex tincidunt vehicula. Fusce sit amet dui tellus.',
+            icon: 'tabler:paint',
+        },
+        {
+            title: 'Ready!',
+            icon: 'tabler:check',
+        },
+        ]}
+        image={{
+        src: import('~/assets/images/creativity.jpg'),
+        alt: 'Steps image',
+        }}
+    />
+
+    <Stats
+        items={[
+        { name: 'Downloads', value: '132K' },
+        { name: 'Stars', value: '24.8K' },
+        { name: 'Forks', value: '10.3K' },
+        { name: 'Users', value: '48.4K' },
+        ]}
+    />
+
+<CallToAction
+    callToAction={{
+      text: 'Get template',
+      href: 'https://github.com/onwidget/astrowind',
+      icon: 'tabler:download',
     }}
-  />
+  >
+    <Fragment slot="title">
+      Astro + <br class="block sm:hidden" /><span class="sm:whitespace-nowrap">Tailwind CSS</span>
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      Be very surprised by these huge fake numbers you are seeing on this page. <br class="hidden md:inline" />Don't
+      waste more time! :P
+    </Fragment>
+  </CallToAction>
 </Layout>
