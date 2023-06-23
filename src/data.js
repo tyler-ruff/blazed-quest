@@ -46,7 +46,7 @@ export const headerData = {
     },
     {
       text: 'Support',
-      href: getBlogPermalink('/support'),
+      href: getPermalink('/support'),
     }
   ],
   actions: [
