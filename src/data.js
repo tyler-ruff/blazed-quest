@@ -3,40 +3,32 @@ import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
 export const headerData = {
   links: [
     {
-      text: 'Landing',
+      text: 'Home',
+      href: '/'
+    },
+    {
+      text: 'Product',
       links: [
         {
-          text: 'Sass',
-          href: getPermalink('/landing/saas'),
+          text: 'About',
+          href: getPermalink('/about/'),
         },
         {
-          text: 'Startup',
-          href: getPermalink('/landing/startup'),
+          text: 'FAQ',
+          href: getPermalink('/faq/'),
         },
         {
-          text: 'Mobile App',
-          href: getPermalink('/landing/mobile-app'),
+          text: 'Pricing',
+          href: getPermalink('/pricing/'),
         },
       ],
     },
     {
-      text: 'Pages',
+      text: 'Learn',
       links: [
         {
-          text: 'Features',
-          href: '#',
-        },
-        {
-          text: 'Pricing',
-          href: '#',
-        },
-        {
-          text: 'About us',
-          href: '#',
-        },
-        {
-          text: 'Contact',
-          href: '#',
+          text: 'Documentation',
+          href: 'https://blazed.dev/docs/prologue/quick-start/',
         },
         {
           text: 'Terms',
@@ -49,16 +41,16 @@ export const headerData = {
       ],
     },
     {
-      text: 'Widgets',
-      href: '#',
-    },
-    {
       text: 'Blog',
       href: getBlogPermalink(),
     },
+    {
+      text: 'Support',
+      href: getBlogPermalink('/support'),
+    }
   ],
   actions: [
-    { type: 'button', text: 'Download', href: 'https://github.com/onwidget/astrowind' }
+    { type: 'button', text: 'Open App', href: 'https://app.blazed.quest/' }
   ],
 };
   

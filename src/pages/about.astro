@@ -21,7 +21,39 @@ const meta = {
 
     <Note />
 
-     <Features
+    <Content
+        highlight="Inside template"
+        title="And what's inside? ..."
+        items={[
+        {
+            title: 'Per ei quaeque sensibus',
+            description:
+            'Ex usu illum iudico molestie. Pro ne agam facete mediocritatem, ridens labore facete mea ei. Pro id apeirian dignissim.',
+        },
+        {
+            title: 'Cu imperdiet posidonium sed',
+            description:
+            'Amet utinam aliquando ut mea, malis admodum ocurreret nec et, elit tibique cu nec. Nec ex maluisset inciderint, ex quis.',
+        },
+        {
+            title: 'Nulla omittam sadipscing mel ne',
+            description:
+            'At sed possim oporteat probatus, justo graece ne nec, minim commodo legimus ut vix. Ut eos iudico quando soleat, nam modus.',
+        },
+        ]}
+        image={{
+        src: import('~/assets/images/caos.jpg'),
+        alt: 'Colorful Image',
+        }}
+    >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Ad vix debet docendi</h3>
+      Ne dicta praesent ocurreret has, diam theophrastus at pro. Eos etiam regione ut, persius eripuit quo id. Sit te euismod
+      tacimates.
+    </Fragment>
+  </Content>
+
+  <Features
         highlight="Features"
         title="What you get with AstroWind"
         subtitle="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque rem aperiam, eaque ipsa quae."
@@ -131,67 +163,6 @@ const meta = {
         ]}
     />
 
-    <Content
-        highlight="Inside template"
-        title="And what's inside? ..."
-        items={[
-        {
-            title: 'Per ei quaeque sensibus',
-            description:
-            'Ex usu illum iudico molestie. Pro ne agam facete mediocritatem, ridens labore facete mea ei. Pro id apeirian dignissim.',
-        },
-        {
-            title: 'Cu imperdiet posidonium sed',
-            description:
-            'Amet utinam aliquando ut mea, malis admodum ocurreret nec et, elit tibique cu nec. Nec ex maluisset inciderint, ex quis.',
-        },
-        {
-            title: 'Nulla omittam sadipscing mel ne',
-            description:
-            'At sed possim oporteat probatus, justo graece ne nec, minim commodo legimus ut vix. Ut eos iudico quando soleat, nam modus.',
-        },
-        ]}
-        image={{
-        src: import('~/assets/images/caos.jpg'),
-        alt: 'Colorful Image',
-        }}
-    >
-    <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Ad vix debet docendi</h3>
-      Ne dicta praesent ocurreret has, diam theophrastus at pro. Eos etiam regione ut, persius eripuit quo id. Sit te euismod
-      tacimates.
-    </Fragment>
-  </Content>
-
-  <Content
-    isReversed
-    isAfterContent
-    items={[
-      {
-        title: 'Per ei quaeque sensibus',
-      },
-      {
-        title: 'Cu imperdiet posidonium sed',
-      },
-      {
-        title: 'Nulla omittam sadipscing mel ne',
-      },
-      {
-        title: 'Per ei quaeque sensibus',
-      },
-      {
-        title: 'Cu imperdiet posidonium sed',
-      },
-      {
-        title: 'Nulla omittam sadipscing mel ne',
-      },
-    ]}
-    image={{
-      src: import('~/assets/images/vintage.jpg'),
-      alt: 'Vintage Image',
-    }}
-  />
-
     <Steps
         title="Get your dream website up and running in no time with AstroWind."
         items={[
@@ -233,20 +204,21 @@ const meta = {
         ]}
     />
 
-<CallToAction
-    callToAction={{
-      text: 'Get template',
-      href: 'https://github.com/onwidget/astrowind',
-      icon: 'tabler:download',
-    }}
-  >
-    <Fragment slot="title">
-      Astro + <br class="block sm:hidden" /><span class="sm:whitespace-nowrap">Tailwind CSS</span>
-    </Fragment>
+    <CallToAction
+        callToAction={{
+        text: 'Get template',
+        href: 'https://github.com/onwidget/astrowind',
+        icon: 'tabler:download',
+        }}
+    >
+        <Fragment slot="title">
+        Astro + <br class="block sm:hidden" /><span class="sm:whitespace-nowrap">Tailwind CSS</span>
+        </Fragment>
 
-    <Fragment slot="subtitle">
-      Be very surprised by these huge fake numbers you are seeing on this page. <br class="hidden md:inline" />Don't
-      waste more time! :P
-    </Fragment>
-  </CallToAction>
+        <Fragment slot="subtitle">
+        Be very surprised by these huge fake numbers you are seeing on this page. <br class="hidden md:inline" />Don't
+        waste more time! :P
+        </Fragment>
+    </CallToAction>
+    
 </Layout>
