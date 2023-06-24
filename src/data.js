@@ -28,7 +28,7 @@ export const headerData = {
       links: [
         {
           text: 'Documentation',
-          href: 'https://blazed.dev/docs/prologue/quick-start/',
+          href: 'https://blazed.dev/docs/quest/',
         },
         {
           text: 'Terms',
