@@ -4,6 +4,7 @@ import Layout from '~/layouts/PageLayout.astro';
 
 import Hero from '~/components/widgets/Hero.astro';
 import LatestPosts from '~/components/blog/LatestPosts.astro';
+import Steps from '~/components/widgets/Steps.astro';
 
 const meta = {
   title: SITE.title,
@@ -17,7 +18,7 @@ const meta = {
   <Hero
     callToAction={{ text: 'Use the App', href: 'https://app.blazed.quest/' }}
     callToAction2={{ text: 'Learn more', href: '/about', icon: 'tabler:info-square' }}
-    image={{ src: import('~/assets/images/hero.png'), alt: 'AstroWind Hero Image' }}
+    image={{ src: import('~/assets/images/4380.jpg'), alt: 'AstroWind Hero Image' }}
   >
     <Fragment slot="title">
       Amazing project management <span class="hidden xl:inline">solution, </span>
@@ -39,6 +40,38 @@ const meta = {
       </span> 
     </Fragment>
   </Hero>
+
+  <Steps
+    title="Get your dream website up and running in no time with AstroWind."
+    items={[
+    {
+        title: 'Step 1: <span class="font-medium">Download</span>',
+        description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mirisus tempus nulla, sed porttitor est nibh at nulla. Praesent placerat enim ut ex tincidunt vehicula.',
+        icon: 'tabler:package',
+    },
+    {
+        title: 'Step 2: <span class="font-medium">Add content</em>',
+        description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mirisus tempus nulla, sed porttitor est nibh at nulla.',
+        icon: 'tabler:letter-case',
+    },
+    {
+        title: 'Step 3: <span class="font-medium">Customize styles</span>',
+        description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mirisus tempus nulla, sed porttitor est nibh at nulla. Praesent placerat enim ut ex tincidunt vehicula. Fusce sit amet dui tellus.',
+        icon: 'tabler:paint',
+    },
+    {
+        title: 'Ready!',
+        icon: 'tabler:check',
+    },
+    ]}
+    image={{
+    src: import('~/assets/images/creativity.jpg'),
+    alt: 'Steps image',
+    }}
+  />
 
   <LatestPosts
       title="Find out more content in our Blog"

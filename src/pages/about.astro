@@ -7,7 +7,6 @@ import Features from '~/components/widgets/Features.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 import Note from '~/components/widgets/Note.astro';
 import Stats from '~/components/widgets/Stats.astro';
-import Steps from '~/components/widgets/Steps.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const meta = {
@@ -22,23 +21,23 @@ const meta = {
     <Note />
 
     <Content
-        highlight="Inside template"
-        title="And what's inside? ..."
+        highlight="Discover Blazed Quest"
+        title="Top Notch Project Management"
         items={[
         {
-            title: 'Per ei quaeque sensibus',
+            title: 'More than just software',
             description:
-            'Ex usu illum iudico molestie. Pro ne agam facete mediocritatem, ridens labore facete mea ei. Pro id apeirian dignissim.',
+            'Blazed Quest is more than just project management software, its an entire ecosystem, which amplifies the productivity of your staff.',
         },
         {
-            title: 'Cu imperdiet posidonium sed',
+            title: 'AI enhanced',
             description:
-            'Amet utinam aliquando ut mea, malis admodum ocurreret nec et, elit tibique cu nec. Nec ex maluisset inciderint, ex quis.',
+            'We have carefully crafted bots to assist your admin and ops teams, effectively boosting your workforce without additional staff.',
         },
         {
-            title: 'Nulla omittam sadipscing mel ne',
+            title: 'Works with all scales',
             description:
-            'At sed possim oporteat probatus, justo graece ne nec, minim commodo legimus ut vix. Ut eos iudico quando soleat, nam modus.',
+            'From a small single developer company to a multi-national corporation, Blazed Quest is designed to work for your enterprise.',
         },
         ]}
         image={{
@@ -47,16 +46,26 @@ const meta = {
         }}
     >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Ad vix debet docendi</h3>
-      Ne dicta praesent ocurreret has, diam theophrastus at pro. Eos etiam regione ut, persius eripuit quo id. Sit te euismod
-      tacimates.
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        About Blazed Quest
+      </h3>
+      You've never seen a project management system like this before, it even integrates with your exising technologies, <i>seamlessly</i>.
     </Fragment>
   </Content>
 
+  <Stats
+    items={[
+    { name: 'Downloads', value: '132K' },
+    { name: 'Stars', value: '24.8K' },
+    { name: 'Forks', value: '10.3K' },
+    { name: 'Users', value: '48.4K' },
+    ]}
+  />
+
   <Features
         highlight="Features"
-        title="What you get with AstroWind"
-        subtitle="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque rem aperiam, eaque ipsa quae."
+        title="What you get with Quest"
+        subtitle="Glue together existing providers or use Quest exclusively."
         items={[
         [
             {
@@ -163,61 +172,19 @@ const meta = {
         ]}
     />
 
-    <Steps
-        title="Get your dream website up and running in no time with AstroWind."
-        items={[
-        {
-            title: 'Step 1: <span class="font-medium">Download</span>',
-            description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mirisus tempus nulla, sed porttitor est nibh at nulla. Praesent placerat enim ut ex tincidunt vehicula.',
-            icon: 'tabler:package',
-        },
-        {
-            title: 'Step 2: <span class="font-medium">Add content</em>',
-            description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mirisus tempus nulla, sed porttitor est nibh at nulla.',
-            icon: 'tabler:letter-case',
-        },
-        {
-            title: 'Step 3: <span class="font-medium">Customize styles</span>',
-            description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mirisus tempus nulla, sed porttitor est nibh at nulla. Praesent placerat enim ut ex tincidunt vehicula. Fusce sit amet dui tellus.',
-            icon: 'tabler:paint',
-        },
-        {
-            title: 'Ready!',
-            icon: 'tabler:check',
-        },
-        ]}
-        image={{
-        src: import('~/assets/images/creativity.jpg'),
-        alt: 'Steps image',
-        }}
-    />
-
-    <Stats
-        items={[
-        { name: 'Downloads', value: '132K' },
-        { name: 'Stars', value: '24.8K' },
-        { name: 'Forks', value: '10.3K' },
-        { name: 'Users', value: '48.4K' },
-        ]}
-    />
-
     <CallToAction
         callToAction={{
-        text: 'Get template',
-        href: 'https://github.com/onwidget/astrowind',
+        text: 'Open App',
+        href: 'https://app.blazed.quest/',
         icon: 'tabler:download',
         }}
     >
         <Fragment slot="title">
-        Astro + <br class="block sm:hidden" /><span class="sm:whitespace-nowrap">Tailwind CSS</span>
+            Blazed <br class="block sm:hidden" /><span class="sm:whitespace-nowrap">Quest</span>
         </Fragment>
 
         <Fragment slot="subtitle">
-        Be very surprised by these huge fake numbers you are seeing on this page. <br class="hidden md:inline" />Don't
-        waste more time! :P
+            Join the revolution in business and computing.
         </Fragment>
     </CallToAction>
     
