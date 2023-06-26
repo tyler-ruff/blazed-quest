@@ -11,7 +11,7 @@ export const headerData = {
       links: [
         {
           text: 'About',
-          href: getPermalink('/about/'),
+          href: getPergmalink('/about/'),
         },
         {
           text: 'Blog',
