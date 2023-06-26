@@ -14,6 +14,10 @@ export const headerData = {
           href: getPermalink('/about/'),
         },
         {
+          text: 'Blog',
+          href: getBlogPermalink(),
+        },
+        {
           text: 'FAQ',
           href: getPermalink('/faq/'),
         },
@@ -39,10 +43,6 @@ export const headerData = {
           href: getPermalink('/privacy'),
         },
       ],
-    },
-    {
-      text: 'Blog',
-      href: getBlogPermalink(),
     },
     {
       text: 'Support',

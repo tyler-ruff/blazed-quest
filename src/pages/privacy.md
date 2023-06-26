@@ -22,7 +22,7 @@ For the purposes of this Privacy Policy:
 - **Account** means a unique account created for You to access our Service or parts of our Service.
 - **Company** (referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to [Blazed Labs LLC](https://blazedlabs.com/) as well as [Ruff Management inc.](https://ruff-manage.com/), 1650 Simpson Ave, Ocean City NJ 08226.
 - **Cookies** are small files that are placed on Your computer, mobile device or any other device by a website, containing the details of Your browsing history on that website among its many uses.
-- **Country** refers to: California, United States
+- **Country** refers to: United States of America.
 - **Device** means any device that can access the Service such as a computer, a cellphone or a digital tablet.
 - **Personal Data** is any information that relates to an identified or identifiable individual.
 - **Service** refers to the Website.

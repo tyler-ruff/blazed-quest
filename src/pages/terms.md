@@ -126,9 +126,6 @@ Any information containing personal data shall be handled in accordance with all
 GDRP Officer: **Tyler Ruff**
 - Email: [tyler.ruff@outlook.com](mailto:tyler.ruff@outlook.com)
 
-## Security Promise
-Your security and privacy are very important to us. Please refer to our [Privacy Policy](https://blazed.quest/privacy), please refer to our [General Data Protection Regulation (GDRP)]()
-
 ## Contact Us
 
 If you have any questions about these Terms and Conditions, You can contact us:
