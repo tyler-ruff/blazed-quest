@@ -3,7 +3,7 @@ title: 'Terms and Conditions'
 layout: '~/layouts/MarkdownLayout.astro'
 ---
 
-_Last updated_: January 06, 2023
+_Last updated_: June 26, 2023
 
 Please read these terms and conditions carefully before using Our Service.
 
@@ -19,19 +19,19 @@ For the purposes of these Terms and Conditions:
 
 - **Affiliate** means an entity that controls, is controlled by or is under common control with a party, where "control" means ownership of 50% or more of the shares, equity interest or other securities entitled to vote for election of directors or other managing authority.
 
-- **Country** refers to: California, United States
+- **Country** refers to: United States of America.
 
-- **Company** (referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to AstroWind LLC, 1 Cupertino, CA 95014.
+- **Company** (referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to [Blazed Labs LLC](https://blazedlabs.com/) as well as [Ruff Management inc.](https://ruff-manage.com/), 1650 Simpson Ave, Ocean City NJ 08226.
 
 - **Device** means any device that can access the Service such as a computer, a cellphone or a digital tablet.
 
 - **Service** refers to the Website.
 
-- **Terms and Conditions** (also referred as "Terms") mean these Terms and Conditions that form the entire agreement between You and the Company regarding the use of the Service. This Terms and Conditions agreement is a Demo.
+- **Terms and Conditions** (also referred as "Terms") mean these Terms and Conditions that form the entire agreement between You and the Company regarding the use of the Service.
 
 - **Third-party Social Media Service** means any services or content (including data, information, products or services) provided by a third-party that may be displayed, included or made available by the Service.
 
-- **Website** refers to AstroWind, accessible from [https://astrowind.vercel.app](https://astrowind.vercel.app)
+- **Website** refers to Blazed Quest, accessible from [blazed.quest](https://blazed.quest/) as well as [app.blazed.quest](https://app.blazed.quest/).
 
 - **You** means the individual accessing or using the Service, or the company, or other legal entity on behalf of which such individual is accessing or using the Service, as applicable.
 
@@ -43,7 +43,9 @@ Your access to and use of the Service is conditioned on Your acceptance of and c
 
 By accessing or using the Service You agree to be bound by these Terms and Conditions. If You disagree with any part of these Terms and Conditions then You may not access the Service.
 
-You represent that you are over the age of 18\. The Company does not permit those under 18 to use the Service.
+*You represent that you are over the age of 18\.*
+
+**The Company does not permit those under 18 to use the Service.**
 
 Your access to and use of the Service is also conditioned on Your acceptance of and compliance with the Privacy Policy of the Company. Our Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your personal information when You use the Application or the Website and tells You about Your privacy rights and how the law protects You. Please read Our Privacy Policy carefully before using Our Service.
 
@@ -81,6 +83,8 @@ Some jurisdictions do not allow the exclusion of certain types of warranties or 
 
 The laws of the Country, excluding its conflicts of law rules, shall govern this Terms and Your use of the Service. Your use of the Application may also be subject to other local, state, national, or international laws.
 
+This Agreement shall be governed by and construed in accordance with the laws of the State of New Jersey.
+
 ## Disputes Resolution
 
 If You have any concern or dispute about the Service, You agree to first try to resolve the dispute informally by contacting the Company.
@@ -96,8 +100,7 @@ You represent and warrant that (i) You are not located in a country that is subj
 ## Severability and Waiver
 
 ### Severability
-
-If any provision of these Terms is held to be unenforceable or invalid, such provision will be changed and interpreted to accomplish the objectives of such provision to the greatest extent possible under applicable law and the remaining provisions will continue in full force and effect.
+If any term, provision, covenant or restriction of this Agreement is held by a court of competent jurisdiction to be invalid, illegal, void or unenforceable, the remainder of the terms, provisions, covenants and restrictions set forth herein shall remain in full force and effect and shall in no way be affected, impaired or invalidated, and the parties hereto shall use their commercially reasonable efforts to find and employ an alternative means to achieve the same or substantially the same result as that contemplated by such term, provision, covenant or restriction. It is hereby stipulated and declared to be the intention of the parties that they would have executed the remaining terms, provisions, covenants and restrictions without including any of such that may be hereafter declared invalid, illegal, void or unenforceable.
 
 ### Waiver
 
@@ -107,14 +110,29 @@ Except as provided herein, the failure to exercise a right or to require perform
 
 These Terms and Conditions may have been translated if We have made them available to You on our Service. You agree that the original English text shall prevail in the case of a dispute.
 
+## Indemnification
+
+Notwithstanding any contrary provision contained in this Agreement, any election hereunder or any termination of this Agreement, and whether or not this Agreement is otherwise carried out, no part of this Agreement shall not be in any way affected by such election or termination or failure to carry out the terms of this Agreement or any part hereof.
+
 ## Changes to These Terms and Conditions
 
 We reserve the right, at Our sole discretion, to modify or replace these Terms at any time. If a revision is material We will make reasonable efforts to provide at least 30 days' notice prior to any new terms taking effect. What constitutes a material change will be determined at Our sole discretion.
 
 By continuing to access or use Our Service after those revisions become effective, You agree to be bound by the revised terms. If You do not agree to the new terms, in whole or in part, please stop using the website and the Service.
 
+## General Data Protection Regulation (GDRP)
+Any information containing personal data shall be handled in accordance with all applicable privacy laws and regulations, including without limitation the GDPR and equivalent laws and regulations. If for the performance of the Project it is necessary to exchange personal data, the relevant Parties shall determine their respective positions towards each other (either as controller, joint controllers or processor) and the subsequent consequences and responsibilities according to the GDPR as soon as possible after the Effective Date and where required implement these in a separate written agreement.
+
+GDRP Officer: **Tyler Ruff**
+- Email: [tyler.ruff@outlook.com](mailto:tyler.ruff@outlook.com)
+
+## Security Promise
+Your security and privacy are very important to us. Please refer to our [Privacy Policy](https://blazed.quest/privacy), please refer to our [General Data Protection Regulation (GDRP)]()
+
 ## Contact Us
 
 If you have any questions about these Terms and Conditions, You can contact us:
 
-- By email: somecoolemail@domain.com
+- By email: [hello@blazed.space](mailto:hello@blazed.space)
+- By phone: [1 (855) 788-2348](tel:+18557882348)
+- Online: [Contact Form](https://blazed.contact/)
