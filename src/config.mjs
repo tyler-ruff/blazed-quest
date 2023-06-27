@@ -24,8 +24,8 @@ const CONFIG = {
     timeZone: 'EST',
   }),
 
-  googleAnalyticsId: false, // or "G-XXXXXXXXXX",
-  googleSiteVerificationId: 'orcPxI47GSa-cRvY11tUe6iGg2IO_RPvnA1q95iEM3M',
+  googleAnalyticsId: "G-VHF3XYR1WR", // or "G-XXXXXXXXXX",
+  googleSiteVerificationId: false,
 
   blog: {
     disabled: false,
