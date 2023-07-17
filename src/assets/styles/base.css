@@ -21,6 +21,18 @@ html.dark, .dark body{
   color: rgba(0, 0, 0, 0.9);
 }
 
+.moon{
+  display: none;
+}
+
+.dark .sun{
+  display: none;
+}
+
+.dark .moon{
+  display: block;
+}
+
 body::-webkit-scrollbar{
   width:10px;
 }
