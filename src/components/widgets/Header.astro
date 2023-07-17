@@ -52,7 +52,7 @@ const {
       <a class="flex items-center" href={getHomePermalink()}>
         <Logo />
       </a>
-      <div class="flex items-center">
+      <div class="flex items-center md:hidden">
         {showToggleTheme && <ToggleTheme />}
         <ToggleMenu />
       </div>
@@ -109,6 +109,9 @@ const {
               <Icon name="tabler:rss" class="w-5 h-5" />
             </a>
           )
+        }
+        {
+          showToggleTheme && <ToggleTheme />
         }
         {
           actions?.length ? (
