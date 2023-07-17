@@ -7,8 +7,13 @@ html.dark, .dark body{
 }
 
 .dark h1, .dark h2, .dark h3, .dark h4,
-.dark h5, .dark h6, .dark span, .dark p{
+.dark h5, .dark h6, .dark span, .dark p,
+.dark header nav{
   color: rgba(255,2552,255,0.9);
+}
+
+.dark .btn{
+  background: rgba(255,255,255,0.9);
 }
 
 body::-webkit-scrollbar{
