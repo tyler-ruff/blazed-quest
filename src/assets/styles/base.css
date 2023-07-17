@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+html.dark, .dark body{
+  background: rgba(32, 33, 34, 0.99);
+}
+
+.dark h1, .dark h2, .dark h3, .dark h4,
+.dark h5, .dark h6, .dark span, .dark p{
+  color: rgba(255,2552,255,0.9);
+}
+
 body::-webkit-scrollbar{
   width:10px;
 }
